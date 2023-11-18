@@ -32,6 +32,12 @@ console.log("Message one");
 console.log("Message two");
 console.groupEnd();
 
-// * task 4
+// * Task 4
 
 console.table(["Elzero", "Ahmed", "Sameh", "Gamal", "Aya"]);
+
+
+// * Task 5
+
+// console.log("Iam In Console");
+// document.write("Iam In Page");
