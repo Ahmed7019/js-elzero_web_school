@@ -31,3 +31,7 @@ console.group("Group 2");
 console.log("Message one");
 console.log("Message two");
 console.groupEnd();
+
+// * task 4
+
+console.table(["Elzero", "Ahmed", "Sameh", "Gamal", "Aya"]);
