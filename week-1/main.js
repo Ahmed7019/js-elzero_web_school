@@ -11,7 +11,7 @@ let numberOne = 10,
 console.log(numberOne + "" + numberTwo); // Normal Concatenate => 1020
 console.log(typeof (numberOne + "" + numberTwo)); // Normal Concatenate => String
 console.log(`${numberOne}${numberTwo}`); // Template Literals Way => 1020
-console.log(typeof(`${numberOne}${numberTwo}`)); // Template Literals Way => String
+console.log(typeof `${numberOne}${numberTwo}`); // Template Literals Way => String
 
 console.log(numberTwo + "\n" + numberOne);
 /*
@@ -26,3 +26,15 @@ console.log(`${numberTwo} \n${numberOne}`);
   20
   10
 */
+
+// * Task two
+
+// Edit the following code and make it work
+
+/**
+ * console.log(elzero.innerHTML); // object
+ * console.log(typeof elzero); // object
+ */
+
+console.log(typeof(elzero=[])); // object
+console.log(typeof elzero); // object
