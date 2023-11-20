@@ -55,3 +55,15 @@ console.log(typeof elzero); // object
 console.log(
   '`I\'m In \n \\\\ \n Love \\\\ """ \'\'\' \n ++ With ++ \n \\ """\\""" \n ""JavaScript""``'
 );
+
+// * Task 4
+
+/***
+ * Get the followind output
+ * _21_2021_2021_2021_20_
+ */
+
+let a = 21;
+let b = 20;
+let c = "_" + b + "" + a;
+console.log("_" + b + "_" + c.repeat(3) + "_" + a + "_"); // _21_2021_2021_2021_20_
