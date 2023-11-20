@@ -36,5 +36,22 @@ console.log(`${numberTwo} \n${numberOne}`);
  * console.log(typeof elzero); // object
  */
 
-console.log(typeof(elzero=[])); // object
+console.log(typeof (elzero = [])); // object
 console.log(typeof elzero); // object
+
+// * Task three
+
+/***
+ * * Write the following code without using template literals method
+ *
+ * `I'm In
+ *  \\
+ *  Love \\ """ '''
+ *  ++ With ++
+ *  \"""\"""
+ *  ""JavaScript""``
+ */
+
+console.log(
+  '`I\'m In \n \\\\ \n Love \\\\ """ \'\'\' \n ++ With ++ \n \\ """\\""" \n ""JavaScript""``'
+);
