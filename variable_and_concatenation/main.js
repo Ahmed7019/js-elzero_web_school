@@ -1,7 +1,6 @@
-let 
-    cardTitle = "Elzero" , 
-    cardDescription = "Elzero Web School",
-    cardDate = "25/10";
+let cardTitle = "Elzero",
+  cardDescription = "Elzero Web School",
+  cardDate = "25/10";
 
 let card = `
     <div>
@@ -11,3 +10,4 @@ let card = `
     </div>
 `;
 
+document.write(card.repeat(4));
