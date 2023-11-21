@@ -24,4 +24,4 @@ console.log(+true + num + +"2"); // 6
 console.log(num + +true + +true + +true); // 6
 
 // Solution Six
-console.log(num + +true * +"3"); // 6
+console.log(num + +true * "3"); // 6
