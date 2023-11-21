@@ -25,3 +25,19 @@ console.log(num + +true + +true + +true); // 6
 
 // Solution Six
 console.log(num + +true * "3"); // 6
+
+// Task two
+
+let num_ = "10";
+
+// Solution One
+console.log(num_ * +"2"); // 20
+
+// Solution Two
+console.log(num_ * (+true + +true)); // 20
+
+// Solution Three
+console.log(++num_ + +"9"); // 20
+
+// Solution Four
+console.log(--num_ * (+true * +"2")); // 20
