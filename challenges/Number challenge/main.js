@@ -9,7 +9,7 @@ let d = 2.4;
 console.log(Math.min(a,b,c,d)); //Answer is d
 
 // Use variables a + d One time to get the needed output
-console.log(); // 10000
+console.log(Math.pow(a,Math.trunc(d))); // 10000
 
 // Get the integer "2" From d variable with 4 methods
 console.log();
