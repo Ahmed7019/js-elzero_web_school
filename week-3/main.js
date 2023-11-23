@@ -17,3 +17,9 @@ console.log(5e4 * 2); // 100000
 console.log(2e6 / 20); // 100000
 console.log(Math.ceil(99_999.2)); // 100000
 console.log(Math.round(99_999.5)); // 100000
+
+// Task two
+
+// print the number 9007199254740991 usin MIN_SAFE_INTEGER
+
+console.log(-1 *(Number.MIN_SAFE_INTEGER)); // 9007199254740991
