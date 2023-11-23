@@ -12,10 +12,10 @@ console.log(Math.min(a,b,c,d)); //Answer is d
 console.log(Math.pow(a,Math.trunc(d))); // 10000
 
 // Get the integer "2" From d variable with 4 methods
-console.log();
-console.log();
-console.log();
-console.log();
+console.log(Math.trunc(b/100));
+console.log(Math.floor(b/100));
+console.log(Math.trunc(b/a));
+console.log(Math.trunc(b/c));
 
 // Use variables b + d To get this values
 console.log(); // 66.67 => String
