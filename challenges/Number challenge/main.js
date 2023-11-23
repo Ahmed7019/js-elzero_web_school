@@ -18,5 +18,5 @@ console.log(Math.trunc(b/a));
 console.log(Math.trunc(b/c));
 
 // Use variables b + d To get this values
-console.log(); // 66.67 => String
-console.log(); // 67 => Number
+console.log((((b+d)/3.0432).toFixed(2)).toString()); // 66.67 => String
+console.log(Math.trunc(((b+d)/3))); // 67 => Number
