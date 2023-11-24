@@ -27,6 +27,10 @@ console.log(-1 * Number.MIN_SAFE_INTEGER); // 9007199254740991
 // Task three
 
 // print the number 16 using MAX_SAFE_INTEGER without using numbers
-console.log(Number.MAX_SAFE_INTEGER );
+console.log(Number.MAX_SAFE_INTEGER);
 
+// Task Four
 
+let myVar = "100.56789 Views";
+console.log(typeof +myVar, parseInt(myVar)); // 100
+console.log(typeof +myVar, parseFloat(myVar).toFixed(2)); // 100.57.
