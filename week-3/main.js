@@ -51,3 +51,8 @@ console.log(Number.parseInt(flt)); // 10
 console.log(Math.round(flt)); // 10
 console.log(Math.floor(flt)); // 10
 console.log(Math.round(Number.parseFloat(flt))); // 10
+
+// Task seven
+
+// Print a random number in the range from zero to four
+console.log(Math.floor(Math.random() * 5)); // 0 || 1 || 2 || 3 || 4
