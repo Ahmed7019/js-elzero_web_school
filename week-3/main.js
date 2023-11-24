@@ -33,4 +33,10 @@ console.log(Number.MAX_SAFE_INTEGER);
 
 let myVar = "100.56789 Views";
 console.log(typeof +myVar, parseInt(myVar)); // 100
-console.log(typeof +myVar, parseFloat(myVar).toFixed(2)); // 100.57.
+console.log(typeof +myVar, +(parseFloat(myVar).toFixed(2))); // 100.57.
+
+// Task five
+
+let num = 10;
+
+console.log(); // 2
