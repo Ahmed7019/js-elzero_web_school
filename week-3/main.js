@@ -38,5 +38,5 @@ console.log(typeof +myVar, +(parseFloat(myVar).toFixed(2))); // 100.57.
 // Task five
 
 let num = 10;
-
-console.log(); // 2
+// Return the output 2 without typing and number using the function inInteger
+console.log(Number.isInteger(num) + +true); // 2
