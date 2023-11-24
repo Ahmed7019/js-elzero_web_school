@@ -40,3 +40,14 @@ console.log(typeof +myVar, +(parseFloat(myVar).toFixed(2))); // 100.57.
 let num = 10;
 // Return the output 2 without typing and number using the function inInteger
 console.log(Number.isInteger(num) + +true); // 2
+
+// Task six
+
+// Get the output 10 without repeating any methods nor using any numbers
+let flt = 10.4;
+
+console.log(Math.trunc(flt)); // 10
+console.log(Number.parseInt(flt)); // 10
+console.log(Math.round(flt)); // 10
+console.log(Math.floor(flt)); // 10
+console.log(Math.round(Number.parseFloat(flt))); // 10
