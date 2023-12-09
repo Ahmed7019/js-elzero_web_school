@@ -1,8 +1,8 @@
 // Task 1 ( // is the outputs required)
 let userName = "Elzero";
-console.log(); // e
-console.log(); // e
-console.log(); // e
-console.log(); // e
-console.log(); // e
-console.log(); // eee
+console.log(userName[0].toLowerCase()); // e
+console.log(userName.charAt(0).toLowerCase()); // e
+console.log(userName.slice(0,1).toLowerCase()); // e
+console.log(userName.substring(0,1).toLowerCase()); // e
+console.log(userName.substr(0,1).toLowerCase()); // e
+console.log(userName[0].toLowerCase().repeat(3)); // eee
