@@ -12,9 +12,9 @@ let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ammer"];
 
 my = my.reverse();
 let x = [];
-// console.log(my.slice(counter - my.indexOf("Gamal"))); //["Osama", "Elham", "Mazero", "Ahmed"]
+console.log(my.slice(counter - my.indexOf("Gamal"))); //["Osama", "Elham", "Mazero", "Ahmed"]
 
-// console.log(my.slice(counter, my.length - my.indexOf("Gamal"))); // ["Elham","Mazreo"]
+console.log(my.slice(counter, my.length - my.indexOf("Gamal"))); // ["Elham","Mazreo"]
 console.log(my);
 
 console.log(
@@ -32,4 +32,6 @@ let y = x
     my[counter + my.indexOf("Gamal")].slice(counter - my.indexOf("Gamal"))
   )
   .join("");
-console.log(x); // "rO"
+y = y.slice(counter + my.indexOf("Gamal"));
+y[y.length - my.indexOf("Gamal")].toUpperCase();
+console.log(y.charAt(zero) + y.charAt(y.length - my.indexOf("Gamal")).toUpperCase()); // "rO"
