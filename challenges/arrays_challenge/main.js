@@ -33,5 +33,4 @@ let y = x
   )
   .join("");
 y = y.slice(counter + my.indexOf("Gamal"));
-y[y.length - my.indexOf("Gamal")].toUpperCase();
 console.log(y.charAt(zero) + y.charAt(y.length - my.indexOf("Gamal")).toUpperCase()); // "rO"
