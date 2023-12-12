@@ -14,7 +14,7 @@ my = my.reverse()
 
 console.log(my.slice(counter - my.indexOf("Gamal"))); //["Osama", "Elham", "Mazero", "Ahmed"]
 
-console.log(my); // ["Elham","Mazreo"]
+console.log(my.slice(counter,my.length - my.indexOf("Gamal"))); // ["Elham","Mazreo"]
 
 // console.log(); // "Elzero"
 
