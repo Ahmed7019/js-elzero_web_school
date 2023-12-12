@@ -12,9 +12,9 @@ let my = ["Ahmed", "Mazero", "Elham", "Osama", "Gamal", "Ammer"];
 
 my = my.reverse()
 
-console.log(my.splice(counter - my.indexOf("Gamal"))); //["Osama", "Elham", "Mazero", "Ahmed"]
+console.log(my.slice(counter - my.indexOf("Gamal"))); //["Osama", "Elham", "Mazero", "Ahmed"]
 
-// console.log(my.slice("????")); // ["Elham","Mazreo"]
+console.log(my); // ["Elham","Mazreo"]
 
 // console.log(); // "Elzero"
 
