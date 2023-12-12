@@ -18,10 +18,18 @@ let x = [];
 console.log(my);
 
 console.log(
-  x.concat(
-    my[counter].slice(zero, counter - my.indexOf("Gamal")),
-    my[counter + my.indexOf("Gamal")].slice(counter - my.indexOf("Gamal"))
-  ).join("")
+  x
+    .concat(
+      my[counter].slice(zero, counter - my.indexOf("Gamal")),
+      my[counter + my.indexOf("Gamal")].slice(counter - my.indexOf("Gamal"))
+    )
+    .join("")
 ); // "Elzero"
 
-// console.log(); // "rO"
+let y = x
+  .concat(
+    my[counter].slice(zero, counter - my.indexOf("Gamal")),
+    my[counter + my.indexOf("Gamal")].slice(counter - my.indexOf("Gamal"))
+  )
+  .join("");
+console.log(x); // "rO"
