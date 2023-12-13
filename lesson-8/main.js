@@ -21,8 +21,8 @@ let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
 
 // Write Your Code Here
 
-friends.pop();
-friends.shift();
+friends.pop(); // delete last element
+friends.shift(); // delete first element
 console.log(friends); // ["Eman", "Osama"]
 
 // Task three
@@ -36,3 +36,10 @@ let finalArr = [];
 finalArr = finalArr.concat(arrOne, arrTwo).sort().reverse();
 
 console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+
+// Task four
+
+let website = "Go";
+let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
+
+console.log(words.pop().shift().slice(words.length).toUpperCase()); // ZERO
