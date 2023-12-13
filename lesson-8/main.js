@@ -12,3 +12,15 @@ console.log(
 console.log(
   myFriends.splice(myFriends.indexOf("Ahmed"), myFriends.indexOf("Gamal"))
 ); // ["Ahmed", "Elham", "Osama"];
+
+// Task two
+
+// Slice method is not allowed
+
+let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+
+// Write Your Code Here
+
+friends.pop();
+friends.shift();
+console.log(friends); // ["Eman", "Osama"]
