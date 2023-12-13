@@ -43,3 +43,15 @@ let website = "Go";
 let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 
 console.log(words.pop().shift().slice(words.length).toUpperCase()); // ZERO
+
+// Task five
+
+let needle = "JS";
+let haystack = ["PHP", "JS", "Python"];
+
+// Write 3 Solutions ( Make sure that the second array includes the firs array's content )
+
+// First solution
+if (haystack.includes(needle) === true || haystack.includes("JS") === true ){
+  console.log("Found");
+}
