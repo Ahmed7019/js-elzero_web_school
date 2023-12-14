@@ -52,6 +52,16 @@ let haystack = ["PHP", "JS", "Python"];
 // Write 3 Solutions ( Make sure that the second array includes the firs array's content )
 
 // First solution
-if (haystack.includes(needle) === true || haystack.includes("JS") === true ){
+if (haystack.includes(needle) === true || haystack.includes("JS") === true) {
   console.log("Found");
+}
+
+// Second solution
+let x = haystack.indexOf("JS");
+switch (x) {
+  case 1:
+    console.log("Found");
+    break;
+  default:
+    console.log("Not found");
 }
