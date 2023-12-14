@@ -32,7 +32,6 @@ for (let i = 0; i < newAdmins.length; i++) {
 let teamA = [];
 let teamS = [];
 let teamO = [];
-myEmployees.sort();
 console.log(myEmployees);
 
 for (let i = 0; i < myEmployees.length; i++) {
@@ -56,6 +55,16 @@ for (let j = 0; j < newAdmins.length; j++) {
 
     `
   );
-
+  if (j + 1 == 1) {
+    for (let i = 0; i < teamA.length; i++) {
+      document.write(`- ${i + 1} ${teamA[i]} <br>`);
+      document.write(`<br>`);
+    }
+  } else if(j+1==2) {
+    for (let i = 0; i < teamO.length; i++) {
+        document.write(`- ${i + 1} ${teamO[i]} <br>`);
+        document.write(`<br>`);
+      }
+  }
   document.write(`</div>`);
 }
