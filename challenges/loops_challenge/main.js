@@ -31,12 +31,15 @@ for (let i = 0; i < newAdmins.length; i++) {
 
 console.log(teamsNumber);
 document.write(`<div>We Have ${newAdmins.length} Admins</div>`);
-document.write(`<hr>`);
-document.write(`<div>`);
-document.write(
-  `
-    <p>The Admin for team ${teamsNumber[0]} Is ${newAdmins[0]}</p>
+for (let j = 0; j < newAdmins.length; j++) {
+  document.write(`<hr>`);
+  document.write(`<div>`);
+  document.write(
+    `
+    <p>The Admin for team ${teamsNumber[j]} Is ${newAdmins[j]}</p>
     <h2>Team Members:</h2>
     `
-);
-document.write(`</div>`);
+  );
+
+  document.write(`</div>`);
+}
