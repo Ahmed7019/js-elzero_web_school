@@ -29,7 +29,22 @@ for (let i = 0; i < newAdmins.length; i++) {
   teamsNumber.push(i + 1);
 }
 
-console.log(teamsNumber);
+let teamA = [];
+let teamS = [];
+let teamO = [];
+myEmployees.sort();
+console.log(myEmployees);
+
+for (let i = 0; i < myEmployees.length; i++) {
+  if (myEmployees[i][0] === "A") {
+    teamA.push(myEmployees[i]);
+  } else if (myEmployees[i][0] === "O") {
+    teamO.push(myEmployees[i]);
+  } else {
+    teamS.push(myEmployees[i]);
+  }
+}
+
 document.write(`<div>We Have ${newAdmins.length} Admins</div>`);
 for (let j = 0; j < newAdmins.length; j++) {
   document.write(`<hr>`);
@@ -38,6 +53,7 @@ for (let j = 0; j < newAdmins.length; j++) {
     `
     <p>The Admin for team ${teamsNumber[j]} Is ${newAdmins[j]}</p>
     <h2>Team Members:</h2>
+
     `
   );
 
