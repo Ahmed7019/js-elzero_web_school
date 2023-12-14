@@ -71,3 +71,27 @@ switch (x) {
 if (haystack.includes("JS") === true) {
   console.log("Found");
 }
+
+// Task five
+
+// Get the output fxy without using any number
+
+let arr1 = ["A", "C", "X"];
+let arr2 = ["D", "E", "F", "Y"];
+let allArrs = [];
+
+// Your Code Here
+arr1.reverse();
+arr2.reverse();
+console.log(arr1);
+console.log(arr2);
+allArrs = allArrs
+  .concat(
+    arr2[arr2.indexOf("F")],
+    arr1[arr1.indexOf("X")],
+    arr2[arr2.indexOf("Y")]
+  )
+  .join("")
+  .toLowerCase();
+
+console.log(allArrs); // fxy
