@@ -26,8 +26,17 @@ for (let i = 0; i < myAdmins.length; i++) {
 let teamsNumber = [];
 // The number of the teams
 for (let i = 0; i < newAdmins.length; i++) {
-  teamsNumber.push(i+1);
+  teamsNumber.push(i + 1);
 }
 
 console.log(teamsNumber);
 document.write(`<div>We Have ${newAdmins.length} Admins</div>`);
+document.write(`<hr>`);
+document.write(`<div>`);
+document.write(
+  `
+    <p>The Admin for team ${teamsNumber[0]} Is ${newAdmins[0]}</p>
+    <h2>Team Members:</h2>
+    `
+);
+document.write(`</div>`);
