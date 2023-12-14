@@ -11,6 +11,9 @@ let myEmployees = [
   "Othman",
   "Amany",
   "Samia",
+  "Sara",
+  "Ali",
+  "Okash",
 ];
 
 let newAdmins = [];
@@ -55,7 +58,7 @@ for (let j = 0; j < newAdmins.length; j++) {
 
     `
   );
-  
+
   if (j + 1 == 1) {
     for (let i = 0; i < teamA.length; i++) {
       document.write(`- ${i + 1} ${teamA[i]} <br>`);
