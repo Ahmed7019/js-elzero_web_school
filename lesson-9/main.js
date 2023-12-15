@@ -21,17 +21,17 @@
 
 // Task two
 
-let start = 10;
-let end = 0;
-let stop = 3;
+// let start = 10;
+// let end = 0;
+// let stop = 3;
 
-for (start; start >= stop; start--) {
-  if (start < 10) {
-    console.log(`${end}${start}`);
-  } else {
-    console.log(start);
-  }
-}
+// for (start; start >= stop; start--) {
+//   if (start < 10) {
+//     console.log(`${end}${start}`);
+//   } else {
+//     console.log(start);
+//   }
+// }
 // Output
 // 10
 // 09
@@ -41,3 +41,36 @@ for (start; start >= stop; start--) {
 // 05
 // 04
 // 03
+
+// Task three
+
+let start = 1;
+let end = 6;
+let breaker = 2;
+
+for (start; start <= end; start++) {
+  console.log(start);
+  console.log(`-- ${breaker}`);
+  console.log(`-- ${end - breaker}`);
+}
+// Output
+/*
+1
+-- 2
+-- 4
+2
+-- 2
+-- 4
+3
+-- 2
+-- 4
+4
+-- 2
+-- 4
+5
+-- 2
+-- 4
+6
+-- 2
+-- 4
+*/
