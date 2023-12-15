@@ -113,8 +113,8 @@ for (let i = letter.indexOf("a"); i < friends.length; i++) {
 }
 
 // Output
-("1 => Sayed");
-("2 => Eman");
-("3 => Mahmoud");
-("4 => Osama");
-("5 => Sameh");
+// ("1 => Sayed");
+// ("2 => Eman");
+// ("3 => Mahmoud");
+// ("4 => Osama");
+// ("5 => Sameh");
