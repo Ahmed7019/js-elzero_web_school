@@ -80,7 +80,7 @@
 // let index = 10;
 // let jump = 2;
 // for (;;) {
-  // Write Your Code Here
+// Write Your Code Here
 //   if (index >= jump * jump) {
 //     console.log(index);
 //   }
@@ -121,14 +121,36 @@
 
 // Task six
 
-let start = 0;
-let swappedName = "elZerO";
+// let start = 0;
+// let swappedName = "elZerO";
 
-for (start; start < swappedName.length; start++) {
-  if (swappedName[start] === swappedName[start].toUpperCase()) {
-    swappedName[start].toLowerCase();
+// for (start; start < swappedName.length; start++) {
+//   if (swappedName[start] === swappedName[start].toUpperCase()) {
+//     swappedName[start].toLowerCase();
+//   } else {
+//     swappedName[start].toUpperCase();
+//   }
+// }
+// console.log(swappedName);
+
+// Task seven
+
+let start = 0;
+let mix = [1, 2, 3, "A", "B", "C", 4];
+
+for (start; start < mix.length; start++) {
+  if (typeof mix[start] === typeof 1) {
+    if (mix[start] === mix.indexOf("B") - mix.indexOf("A")) {
+      continue;
+    } else {
+      console.log(mix[start]);
+    }
   } else {
-    swappedName[start].toUpperCase();
+    continue;
   }
 }
-console.log(swappedName);
+
+// Output
+// 2
+// 3
+// 4
