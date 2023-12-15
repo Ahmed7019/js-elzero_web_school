@@ -44,15 +44,15 @@
 
 // Task three
 
-let start = 1;
-let end = 6;
-let breaker = 2;
+// let start = 1;
+// let end = 6;
+// let breaker = 2;
 
-for (start; start <= end; start++) {
-  console.log(start);
-  console.log(`-- ${breaker}`);
-  console.log(`-- ${end - breaker}`);
-}
+// for (start; start <= end; start++) {
+//   console.log(start);
+//   console.log(`-- ${breaker}`);
+//   console.log(`-- ${end - breaker}`);
+// }
 // Output
 /*
 1
@@ -74,3 +74,24 @@ for (start; start <= end; start++) {
 -- 2
 -- 4
 */
+
+// Task four
+
+let index = 10;
+let jump = 2;
+for (;;) {
+  // Write Your Code Here
+  if (index >= jump * jump) {
+    console.log(index);
+  }
+  index -= jump;
+  if (index < jump.toExponential(2)) {
+    break;
+  }
+}
+
+// Output
+// 10
+// 8
+// 6
+// 4
