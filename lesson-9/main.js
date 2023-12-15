@@ -77,18 +77,18 @@
 
 // Task four
 
-let index = 10;
-let jump = 2;
-for (;;) {
+// let index = 10;
+// let jump = 2;
+// for (;;) {
   // Write Your Code Here
-  if (index >= jump * jump) {
-    console.log(index);
-  }
-  index -= jump;
-  if (index < jump.toExponential(2)) {
-    break;
-  }
-}
+//   if (index >= jump * jump) {
+//     console.log(index);
+//   }
+//   index -= jump;
+//   if (index < jump.toExponential(2)) {
+//     break;
+//   }
+// }
 
 // Output
 // 10
@@ -97,20 +97,20 @@ for (;;) {
 // 4
 
 // Task five
-let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
-let letter = "a";
+// let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+// let letter = "a";
 
-for (let i = letter.indexOf("a"); i < friends.length; i++) {
-  // Check if the name begins with A
-  if (
-    friends[i][letter.indexOf("a")] ===
-    letter[letter.indexOf("a")].toUpperCase()
-  ) {
-    continue;
-  } else {
-    console.log(`${i } => ${friends[i]}`);
-  }
-}
+// for (let i = letter.indexOf("a"); i < friends.length; i++) {
+//   // Check if the name begins with A
+//   if (
+//     friends[i][letter.indexOf("a")] ===
+//     letter[letter.indexOf("a")].toUpperCase()
+//   ) {
+//     continue;
+//   } else {
+//     console.log(`${i } => ${friends[i]}`);
+//   }
+// }
 
 // Output
 // ("1 => Sayed");
@@ -118,3 +118,17 @@ for (let i = letter.indexOf("a"); i < friends.length; i++) {
 // ("3 => Mahmoud");
 // ("4 => Osama");
 // ("5 => Sameh");
+
+// Task six
+
+let start = 0;
+let swappedName = "elZerO";
+
+for (start; start < swappedName.length; start++) {
+  if (swappedName[start] === swappedName[start].toUpperCase()) {
+    swappedName[start].toLowerCase();
+  } else {
+    swappedName[start].toUpperCase();
+  }
+}
+console.log(swappedName);
