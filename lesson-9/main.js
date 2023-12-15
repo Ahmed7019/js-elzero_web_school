@@ -139,13 +139,13 @@ let start = 0;
 let mix = [1, 2, 3, "A", "B", "C", 4];
 
 for (start; start < mix.length; start++) {
-  if (typeof mix[start] === typeof 1) {
-    if (mix[start] === mix.indexOf("B") - mix.indexOf("A")) {
+  if (typeof mix[start] === typeof start) { // Check if the element is number
+    if (mix[start] === mix.indexOf("B") - mix.indexOf("A")) { // if the element = 1 just ignore it
       continue;
     } else {
       console.log(mix[start]);
     }
-  } else {
+  } else { // if the element is not a number ignore it
     continue;
   }
 }
