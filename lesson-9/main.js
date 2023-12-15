@@ -107,8 +107,11 @@ for (let i = letter.indexOf("a"); i < friends.length; i++) {
     letter[letter.indexOf("a")].toUpperCase()
   ) {
     continue;
+  } else {
+    console.log(`${i } => ${friends[i]}`);
   }
 }
+
 // Output
 ("1 => Sayed");
 ("2 => Eman");
