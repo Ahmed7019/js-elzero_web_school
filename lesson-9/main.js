@@ -95,3 +95,23 @@ for (;;) {
 // 8
 // 6
 // 4
+
+// Task five
+let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter = "a";
+
+for (let i = letter.indexOf("a"); i < friends.length; i++) {
+  // Check if the name begins with A
+  if (
+    friends[i][letter.indexOf("a")] ===
+    letter[letter.indexOf("a")].toUpperCase()
+  ) {
+    continue;
+  }
+}
+// Output
+("1 => Sayed");
+("2 => Eman");
+("3 => Mahmoud");
+("4 => Osama");
+("5 => Sameh");
