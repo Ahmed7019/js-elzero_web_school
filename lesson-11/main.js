@@ -121,8 +121,8 @@ function multiply(...num) {
   // Declare result variable
   let result = 1;
   for (let i = 0; i < num.length; i++) {
-    if (typeof num === typeof "A") continue;
-    else if (Number.isInteger(num) !== true) Math.floor(num);
+    if (typeof num[i] === typeof "A") continue;
+    else if (Number.isInteger(num[i]) !== true) Math.floor(num[i]);
     result *= num[i];
   }
   console.log(result);
