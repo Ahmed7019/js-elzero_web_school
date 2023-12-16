@@ -17,24 +17,22 @@ let number = [];
 //   }
 while (counter < friends.length) {
   if (typeof friends[counter] === typeof index) {
-    for (let i = 0; i < friends.indexOf("Sayed"); i++)
-      number.push(friends[counter]);
+    // Adds the numbers (1 ,2) to number array
+    number.push(friends[counter]);
     counter++;
   } else if (
     friends[counter][index] === "S" ||
     friends[counter][index] === "M"
   ) {
-    for (let i = 0; i < friends.indexOf("Sayed"); i++)
-      console.log(
-        `${number[i] + friends.indexOf("Sayed")} => ${friends[counter]}`
-      );
+    for (let i = index; i < number.length; i++)
+      console.log(`${number[i]} => ${friends[counter]}`);
+    // console.log(``);
     counter++;
   } else {
     counter++;
     continue;
   }
 }
-console.log(number);
 // Output
 // ("1 => Sayed");
 // ("2 => Mahmoud");
