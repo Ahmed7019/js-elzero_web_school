@@ -12,7 +12,15 @@
  * - Use Ternary Conditional Operator
  */
 
-showDetails("Osama",38,true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
-showDetails(38,"Osama",true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
-showDetails(true,38,"Osama"); // "Hello Osama", Your Age Is 38, You Are Available For Hire
-showDetails(false,"Osama",38); // "Hello Osama", Your Age Is 38, You Are Available For Hire
+// Variables
+
+let name = "",
+  age = 0,
+  status = true;
+
+function showDetails(a, b, c) {}
+
+showDetails("Osama", 38, true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
+showDetails(38, "Osama", true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
+showDetails(true, 38, "Osama"); // "Hello Osama", Your Age Is 38, You Are Available For Hire
+showDetails(false, "Osama", 38); // "Hello Osama", Your Age Is 38, You Are Available For Hire
