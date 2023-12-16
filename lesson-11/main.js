@@ -118,9 +118,14 @@ createSelectBox(2000, 2021);
 // Create a funciton that multiply every number passed upon it
 
 function multiply(...num) {
-  if (typeof num === typeof "A") return;
-  else if (Number.isInteger(num) !== true) console.log("Float");
-  console.log(num * num);
+  // Declare result variable
+  let result = 1;
+  for (let i = 0; i < num.length; i++) {
+    if (typeof num === typeof "A") continue;
+    else if (Number.isInteger(num) !== true) Math.floor(num);
+    result *= num[i];
+  }
+  console.log(result);
 }
 
 multiply(10, 20); // 200
