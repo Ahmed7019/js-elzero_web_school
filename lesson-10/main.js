@@ -24,9 +24,7 @@ while (counter < friends.length) {
     friends[counter][index] === "S" ||
     friends[counter][index] === "M"
   ) {
-    for (let i = index; i < number.length; i++)
-      console.log(`${number[i]} => ${friends[counter]}`);
-    // console.log(``);
+    console.log(`${number[i]} => ${friends[counter]}`);
     counter++;
   } else {
     counter++;
