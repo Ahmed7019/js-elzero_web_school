@@ -15,6 +15,13 @@ let number = [];
 //     console.log(`${number[index]} => ${friends[counter]}`);
 //     counter++;
 //   }
+
+for (let i = index; i < friends.length; i++) {
+  if (typeof friends[i] === typeof index) {
+    number.push(friends[i]);
+  }
+}
+
 while (counter < friends.length) {
   /*if (typeof friends[counter] === typeof index) {
     // Adds the numbers (1 ,2) to number array
@@ -24,6 +31,7 @@ while (counter < friends.length) {
   if (friends[counter][index] === "S" || friends[counter][index] === "M") {
     let i = index;
     if (friends[counter][index] === "M") i = friends.indexOf("Sayed");
+    else i = index;
     console.log(`${number[i]} => ${friends[counter]}`);
     counter++;
   } else {
