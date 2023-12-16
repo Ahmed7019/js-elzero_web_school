@@ -78,6 +78,11 @@ function checkStatus(a, b, c) {
   if (typeof b === typeof name) name = b;
   else if (typeof b === typeof age) age = b;
   else status = b;
+
+  // Variable c
+  if (typeof c === typeof name) name = c;
+  else if (typeof c === typeof age) age = c;
+  else status = c;
 }
 
 // Needed Output
