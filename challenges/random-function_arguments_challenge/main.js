@@ -35,9 +35,16 @@ function showDetails(a, b, c) {
     : typeof c === typeof age
     ? (age = c)
     : (status = c);
+
+  // Check for status
+  let availablity = "";
+  status === true
+    ? (availablity = "You Are Available For Hire")
+    : (availablity = "You Are Not Available For Hire");
+  document.write(`<p>Hello ${name}, Your Age Is ${age},${availablity}</p> `);
 }
 
 showDetails("Osama", 38, true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
 showDetails(38, "Osama", true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
 showDetails(true, 38, "Osama"); // "Hello Osama", Your Age Is 38, You Are Available For Hire
-showDetails(false, "Osama", 38); // "Hello Osama", Your Age Is 38, You Are Available For Hire
+showDetails(false, "Osama", 38); // "Hello Osama", Your Age Is 38, You Are Not Available For Hire
