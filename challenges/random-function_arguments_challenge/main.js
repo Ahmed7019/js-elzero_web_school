@@ -12,13 +12,30 @@
  * - Use Ternary Conditional Operator
  */
 
-// Variables
-
-let name = "",
-  age = 0,
-  status = true;
-
-function showDetails(a, b, c) {}
+function showDetails(a, b, c) {
+  // Variables
+  let name = "",
+    age = 0,
+    status = true;
+  // Check for the a parameter and do the same for both b & c
+  typeof a === typeof name
+    ? (name = a)
+    : typeof a === typeof age
+    ? (age = a)
+    : (status = a);
+  // Check b parameter
+  typeof b === typeof name
+    ? (name = b)
+    : typeof b === typeof age
+    ? (age = b)
+    : (status = b);
+  // Check c parameter
+  typeof c === typeof name
+    ? (name = c)
+    : typeof c === typeof age
+    ? (age = c)
+    : (status = c);
+}
 
 showDetails("Osama", 38, true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
 showDetails(38, "Osama", true); // "Hello Osama", Your Age Is 38, You Are Available For Hire
