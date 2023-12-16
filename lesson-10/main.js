@@ -16,7 +16,6 @@ while (counter < friends.length) {
   if (friends[counter][index] === "S" || friends[counter][index] === "M") { // Check for the first letter of the element
     let i = index;
     if (friends[counter][index] === "M") i = friends.indexOf("Sayed"); // let i = 1
-
     console.log(`${number[i]} => ${friends[counter]}`);
     counter++;
   } else {
