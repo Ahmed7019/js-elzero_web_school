@@ -60,13 +60,19 @@ ageInTime(38); // Months Example => 456 Months
 
 // Task four
 
-// Create variables
-
-let name = "",
-  age = 0,
-  status = true;
 function checkStatus(a, b, c) {
   // Your Code Here
+
+  // Declare variables
+  let name = "",
+    age = 0,
+    status = true;
+    // Check if the type of each parameter is compatible with any variable and save it there
+
+    // Variable a
+    if (typeof a === typeof name) name = a;
+  else if (typeof a === typeof age) age = a;
+  else status = a;
 }
 
 // Needed Output
