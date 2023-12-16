@@ -103,3 +103,13 @@ checkStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Av
 // Task five
 
 // Create a function to create select box in html includes options with start & end years
+
+function createSelectBox(startYear, endYear) {
+  // Your Code Here
+  document.write(`<select>`);
+  for (let i = startYear; i <= endYear; i++) {
+    document.write(`<option value="${i}">${i}</option>`);
+  }
+  document.write(`</select>`);
+}
+createSelectBox(2000, 2021);
