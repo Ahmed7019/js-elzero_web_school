@@ -25,8 +25,7 @@ while (counter < friends.length) {
     friends[counter][index] === "M"
   ) {
     let i = index;
-    if (friends[counter][index] === "S") i = friends.indexOf("Sayed");
-    else i = friends.indexOf("Ali");
+    if (friends[counter][index] === "M") i = friends.indexOf("Sayed");
     console.log(`${number[i]} => ${friends[counter]}`);
     counter++;
   } else {
