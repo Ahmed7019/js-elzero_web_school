@@ -13,6 +13,7 @@ while (counter < friends.length) {
   else {
     console.log(`${counter + friends.indexOf("Sayed")} => ${friends[counter]}`);
   }
+  counter++;
 }
 // Output
 ("1 => Sayed");
