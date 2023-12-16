@@ -16,14 +16,12 @@ let number = [];
 //     counter++;
 //   }
 while (counter < friends.length) {
-  if (typeof friends[counter] === typeof index) {
+  /*if (typeof friends[counter] === typeof index) {
     // Adds the numbers (1 ,2) to number array
     number.push(friends[counter]);
     counter++;
-  } else if (
-    friends[counter][index] === "S" ||
-    friends[counter][index] === "M"
-  ) {
+  }*/
+  if (friends[counter][index] === "S" || friends[counter][index] === "M") {
     let i = index;
     if (friends[counter][index] === "M") i = friends.indexOf("Sayed");
     console.log(`${number[i]} => ${friends[counter]}`);
