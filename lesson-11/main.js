@@ -113,3 +113,16 @@ function createSelectBox(startYear, endYear) {
   document.write(`</select>`);
 }
 createSelectBox(2000, 2021);
+
+// Task six
+// Create a funciton that multiply every number passed upon it
+
+function multiply(...num) {
+  if (typeof num === typeof "A") return;
+  else if (Number.isInteger(num) !== true) console.log("Float");
+  console.log(num * num);
+}
+
+multiply(10, 20); // 200
+multiply("A", 10, 30); // 300
+multiply(100.5, 10, "B"); // 1000
