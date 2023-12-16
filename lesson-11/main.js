@@ -83,6 +83,15 @@ function checkStatus(a, b, c) {
   if (typeof c === typeof name) name = c;
   else if (typeof c === typeof age) age = c;
   else status = c;
+
+  if (status === true)
+    console.log(
+      `Hello ${name}, Your Age Is ${age}, You Are Available For Hire`
+    );
+  else
+    console.log(
+      `Hello ${name}, Your Age Is ${age}, You Are Not Available For Hire`
+    );
 }
 
 // Needed Output
