@@ -99,3 +99,7 @@ checkStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Availab
 checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
 checkStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
+
+// Task five
+
+// Create a function to create select box in html includes options with start & end years
