@@ -32,3 +32,24 @@ calculate(20, 30); // 50
 calculate(20, 30, "add"); // 50
 calculate(20, 30, "subtract"); // -10
 calculate(20, 30, "multiply"); // 600
+
+// Task three
+// Calculate the age of user in months, weeks, days, hours,minutes and seconds
+function ageInTime(theAge) {
+  // Your Code Here
+  // First create the formula to calculate in months
+  if (theAge < 10 || theAge > 100) {
+    console.log("Age Out of Range");
+  } else {
+    console.log(`The Age in months is ${theAge * 12} month`);
+    console.log(`The Age in weeks is ${theAge * 12 * 4} week`);
+    console.log(`The Age in days is ${theAge * 12 * 4 * 7} day`);
+    console.log(`The Age in hours is ${theAge * 12 * 4 * 7 * 24} hour`);
+    console.log(`The Age in minutes is ${theAge * 12 * 4 * 7 * 24 * 60} minute`);
+    console.log(`The Age in seconds is ${theAge * 12 * 4 * 7 * 24 * 60 * 60} second`);
+  }
+}
+
+// Needed Output
+ageInTime(110); // Age Out Of Range
+ageInTime(38); // Months Example => 456 Months
