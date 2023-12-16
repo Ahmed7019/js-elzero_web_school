@@ -45,11 +45,32 @@ function ageInTime(theAge) {
     console.log(`The Age in weeks is ${theAge * 12 * 4} week`);
     console.log(`The Age in days is ${theAge * 12 * 4 * 7} day`);
     console.log(`The Age in hours is ${theAge * 12 * 4 * 7 * 24} hour`);
-    console.log(`The Age in minutes is ${theAge * 12 * 4 * 7 * 24 * 60} minute`);
-    console.log(`The Age in seconds is ${theAge * 12 * 4 * 7 * 24 * 60 * 60} second`);
+    console.log(
+      `The Age in minutes is ${theAge * 12 * 4 * 7 * 24 * 60} minute`
+    );
+    console.log(
+      `The Age in seconds is ${theAge * 12 * 4 * 7 * 24 * 60 * 60} second`
+    );
   }
 }
 
 // Needed Output
 ageInTime(110); // Age Out Of Range
 ageInTime(38); // Months Example => 456 Months
+
+// Task four
+
+// Create variables
+
+let name = "",
+  age = 0,
+  status = true;
+function checkStatus(a, b, c) {
+  // Your Code Here
+}
+
+// Needed Output
+checkStatus("Osama", 38, true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkStatus(38, "Osama", true); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkStatus(true, 38, "Osama"); // "Hello Osama, Your Age Is 38, You Are Available For Hire"
+checkStatus(false, "Osama", 38); // "Hello Osama, Your Age Is 38, You Are Not Available For Hire"
