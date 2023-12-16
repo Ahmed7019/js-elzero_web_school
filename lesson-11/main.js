@@ -67,12 +67,17 @@ function checkStatus(a, b, c) {
   let name = "",
     age = 0,
     status = true;
-    // Check if the type of each parameter is compatible with any variable and save it there
+  // Check if the type of each parameter is compatible with any variable and save it there
 
-    // Variable a
-    if (typeof a === typeof name) name = a;
+  // Variable a
+  if (typeof a === typeof name) name = a;
   else if (typeof a === typeof age) age = a;
   else status = a;
+
+  // Variable b
+  if (typeof b === typeof name) name = b;
+  else if (typeof b === typeof age) age = b;
+  else status = b;
 }
 
 // Needed Output
