@@ -20,6 +20,8 @@ function getDetails(zName, zAge, zCountry) {
   }
   function countryTwoLetters(zCountry) {
     // Write Your Code Here
+    zCountry = zCountry.slice(0, 3).toUpperCase();
+    return zCountry;
     // Egypt => You Live In EG
     // Syria => You Live In SY
   }
