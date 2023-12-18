@@ -26,6 +26,7 @@ function getDetails(zName, zAge, zCountry) {
     // Syria => You Live In SY
   }
   function fullDetails() {
+    return `Hello ${namePattern()}, Your Age Is ${ageWithMessage()}, You Live In ${countryTwoLetters()}`;
     // Write Your Code Here
   }
   return fullDetails(); // Do Not Edit This
