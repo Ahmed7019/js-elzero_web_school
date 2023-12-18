@@ -4,12 +4,17 @@ function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     // Write Your Code Here
     zName = zName.split();
-    return `${zName[0]} ${zName[1][0]}.`
+    return `${zName[0]} ${zName[1][0]}.`;
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
   function ageWithMessage(zAge) {
     // Write Your Code Here
+    let num = 0;
+    for (let i = 0; i < zAge.length; i++) {
+      if (zAge[i] === typeof num) num = zAge[i];
+    }
+    return num;
     // 38 Is My Age => Your Age Is 38
     // 32 Is The Age => Your Age Is 32
   }
