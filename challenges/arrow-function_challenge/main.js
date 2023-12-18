@@ -7,16 +7,16 @@
 // [1] One Statement In Function
 // [2] Convert To Arrow Function
 // [3] Print The Output [Arguments May Change]
-
+let user = [];
 let name = function (...users) {
   for (let i = 0; i < users.length; i++) {
-    users[i] = `[${users[i]}]`;
+    user[i] = user.push(users[i]);
+    return `String [${user[i]}, => Done !`;
   }
-  return users;
+ 
 };
 let names = function (name) {
   // Parameter ?
-  //   return `String ${name.join("], ")} => Done !`;
+  return name;
 };
-
 console.log(names("Osama", "Mohamed", "Ali", "Ibrahim"));
