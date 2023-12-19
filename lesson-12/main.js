@@ -1,11 +1,14 @@
 // Task one
 
 let a = "Osama Mohammed";
-a.split();
-console.log(`${a[0]} ${a[1][0]}.`);
+
+// console.log(`${a.slice(0,a.indexOf(" ")+2)}.`);
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     // Write Your Code Here
+    function nameSlice(...name) { // This function will slice the name and return the first name followed by second name first letter
+      return `${name.slice(0, name.indexOf(" ") + 2)}.`;
+    }
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
