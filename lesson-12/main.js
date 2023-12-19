@@ -6,9 +6,12 @@ let a = "Osama Mohammed";
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     // Write Your Code Here
-    function nameSlice(...name) { // This function will slice the name and return the first name followed by second name first letter
+    function nameSlice(...name) {
+      // This function will slice the name and return the first name followed by second name first letter
       return `${name.slice(0, name.indexOf(" ") + 2)}.`;
     }
+
+    return nameSlice();
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
