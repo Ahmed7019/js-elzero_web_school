@@ -1,17 +1,15 @@
 // Task one
 
-let a = "Osama Mohammed";
+// let a = "Osama Mohammed";
 
 // console.log(`${a.slice(0,a.indexOf(" ")+2)}.`);
 function getDetails(zName, zAge, zCountry) {
-  function namePattern(zName) {
+  function namePattern(...name) {
     // Write Your Code Here
-    function nameSlice(...name) {
-      // This function will slice the name and return the first name followed by second name first letter
-      return `${name.slice(0, name.indexOf(" ") + 2)}.`;
-    }
+    name.push(zName);
+    // This function will slice the name and return the first name followed by second name first letter
 
-    return nameSlice();
+    return `${name[0]} .`;
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
@@ -27,6 +25,7 @@ function getDetails(zName, zAge, zCountry) {
   }
   function fullDetails() {
     // Write Your Code Here
+    return `Hello ${namePattern()}`;
   }
   return fullDetails(); // Do Not Edit This
 }
