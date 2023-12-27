@@ -27,7 +27,9 @@ function getDetails(zName, zAge, zCountry) {
   }
   function fullDetails() {
     // Write Your Code Here
-    return `Hello ${namePattern(zName)}, ${ageWithMessage(zAge)}, ${countryTwoLetters(zCountry)}`;
+    return `Hello ${namePattern(zName)}, ${ageWithMessage(
+      zAge
+    )}, ${countryTwoLetters(zCountry)}`;
   }
   return fullDetails(); // Do Not Edit This
 }
@@ -37,3 +39,16 @@ console.log(getDetails("Osama Mohamed", "38 Is My Age", "Egypt"));
 
 console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 // Hello Ahmed A., Your Age Is 32, You Live In SY
+
+// Task two
+// Turn Each function into arrow function
+function itsMe() {
+  return `Iam A Normal Function`;
+}
+
+let arrowF = () => {
+  return `Iam Arrow Function`;
+};
+
+console.log(itsMe()); // Iam A Normal Function
+console.log(arrowF());
