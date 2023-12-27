@@ -41,8 +41,11 @@ console.log(getDetails("Ahmed ali", "32 Is The Age", "Syria"));
 // Hello Ahmed A., Your Age Is 32, You Live In SY
 
 // Task two
+
 // Turn Each function into arrow function
+
 function itsMe() {
+  // First function
   return `Iam A Normal Function`;
 }
 
@@ -52,3 +55,17 @@ let arrowF = () => {
 
 console.log(itsMe()); // Iam A Normal Function
 console.log(arrowF());
+
+// Second function
+
+function urlCreate(protocol, web, tld) {
+  return `${protocol}://www.${web}.${tld}`;
+}
+
+console.log(urlCreate("https", "elzero", "org")); // https://www.elzero.org
+
+let urlCreator = (protocol, web, tld) => {
+  return `${protocol}://www.${web}.${tld}`;
+};
+
+console.log(urlCreator("https", "elzero", "org"));
