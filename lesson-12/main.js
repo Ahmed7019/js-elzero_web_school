@@ -21,12 +21,13 @@ function getDetails(zName, zAge, zCountry) {
 
   function countryTwoLetters(zCountry) {
     // Write Your Code Here
+    return `You Live In ${zCountry.slice(0, 2).toUpperCase()}`;
     // Egypt => You Live In EG
     // Syria => You Live In SY
   }
   function fullDetails() {
     // Write Your Code Here
-    return `Hello ${namePattern(zName)}, Your Age Is ${ageWithMessage(zAge)}`;
+    return `Hello ${namePattern(zName)}, ${ageWithMessage(zAge)}, ${countryTwoLetters(zCountry)}`;
   }
   return fullDetails(); // Do Not Edit This
 }
