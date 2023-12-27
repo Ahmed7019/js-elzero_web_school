@@ -8,10 +8,10 @@ function getDetails(zName, zAge, zCountry) {
     // Write Your Code Here
     function nameSlice(...name) {
       // This function will slice the name and return the first name followed by second name first letter
-      return `${name.slice(0, name.indexOf(" ") + 2)}.`;
+      ;
     }
-// Hello There
-    return nameSlice();
+
+    return `${zName.slice(0, zName.indexOf(" ") )}${zName.slice(zName.indexOf(" "), zName.indexOf(" ") +2).toUpperCase()}.`
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
@@ -27,6 +27,7 @@ function getDetails(zName, zAge, zCountry) {
   }
   function fullDetails() {
     // Write Your Code Here
+    return `Hello ${namePattern(zName)}`
   }
   return fullDetails(); // Do Not Edit This
 }
