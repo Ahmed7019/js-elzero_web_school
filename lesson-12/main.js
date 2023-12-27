@@ -1,23 +1,24 @@
 // Task one
 
-let a = "Osama Mohammed";
-
-// console.log(`${a.slice(0,a.indexOf(" ")+2)}.`);
 function getDetails(zName, zAge, zCountry) {
   function namePattern(zName) {
     // Write Your Code Here
-
-      // This function will slice the name and return the first name followed by second name first letter
-
-    return `${zName.slice(0, zName.indexOf(" ") )}${zName.slice(zName.indexOf(" "), zName.indexOf(" ") +2).toUpperCase()}.`
+    // This function will slice the name and return the first name followed by second name first letter
+    return `${zName.slice(0, zName.indexOf(" "))}${zName
+      .slice(zName.indexOf(" "), zName.indexOf(" ") + 2)
+      .toUpperCase()}.`;
     // Osama Mohamed => Osama M.
     // Ahmed ali => Ahmed A.
   }
   function ageWithMessage(zAge) {
     // Write Your Code Here
-    // 38 Is My Age => Your Age Is 38
-    // 32 Is The Age => Your Age Is 32
+
+    let age = zAge.slice(0, 2);
+    return `You Age Is ${age}`;
   }
+  // 38 Is My Age => Your Age Is 38
+  // 32 Is The Age => Your Age Is 32
+
   function countryTwoLetters(zCountry) {
     // Write Your Code Here
     // Egypt => You Live In EG
@@ -25,7 +26,7 @@ function getDetails(zName, zAge, zCountry) {
   }
   function fullDetails() {
     // Write Your Code Here
-    return `Hello ${namePattern(zName)}`
+    return `Hello ${namePattern(zName)}, Your Age Is ${ageWithMessage(zAge)}`;
   }
   return fullDetails(); // Do Not Edit This
 }
