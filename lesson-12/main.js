@@ -99,6 +99,34 @@ let checkerArrow = (zName) => {
   };
 };
 
-
 console.log(checkerArrow("Osama")("Available")(4000));
 console.log(checkerArrow("Ahmed")("Not Available")());
+
+// Task Four
+
+function specialMix(...data) {
+  // create a function to extract numebrs and sum the numbers
+  // Your Code Here
+  let i = 0;
+  result = 0;
+  if (typeof data[i] === typeof 5) {
+    for (let i = 0; i < data.length; i++) {
+      let result = 0;
+      result += data[i];
+    }
+    return result;
+  } else if (data.includes(typeof 5)) {
+    for (let i = 0; i < data.length; i++) {
+      +data[i];
+      let result = 0;
+      result += data[i];
+    }
+  } else {
+    return `All Is String`;
+  }
+}
+
+console.log(specialMix(10, 20, 30)); // 60
+console.log(specialMix("10Test", "Testing", "20Cool")); // 30
+console.log(specialMix("Testing", "10Testing", "40Cool")); // 50
+console.log(specialMix("Test", "Cool", "Test")); // All Is Strings
