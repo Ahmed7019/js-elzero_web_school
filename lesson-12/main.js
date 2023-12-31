@@ -105,7 +105,7 @@ console.log(checkerArrow("Ahmed")("Not Available")());
 // Task Four
 
 function specialMix(...data) {
-  // create a function to extract numebrs and sum the numbers
+  // create a function to extract numbers and sum the numbers
   // Your Code Here
   let i = 0;
   result = 0;
