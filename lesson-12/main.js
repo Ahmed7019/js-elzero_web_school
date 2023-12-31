@@ -107,22 +107,9 @@ console.log(checkerArrow("Ahmed")("Not Available")());
 function specialMix(...data) {
   // create a function to extract numbers and sum the numbers
   // Your Code Here
-  let i = 0;
-  result = 0;
-  if (typeof data[i] === typeof 5) {
-    for (let i = 0; i < data.length; i++) {
-      let result = 0;
-      result += data[i];
-    }
-    return result;
-  } else if (data.includes(typeof 5)) {
-    for (let i = 0; i < data.length; i++) {
-      +data[i];
-      let result = 0;
-      result += data[i];
-    }
-  } else {
-    return `All Is String`;
+  
+  let ignoreStrings = (data) => {
+
   }
 }
 
