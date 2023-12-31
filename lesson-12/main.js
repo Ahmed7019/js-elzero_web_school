@@ -107,10 +107,16 @@ console.log(checkerArrow("Ahmed")("Not Available")());
 function specialMix(...data) {
   // create a function to extract numbers and sum the numbers
   // Your Code Here
-  
-  let ignoreStrings = (data) => {
-
-  }
+  let ignoreStrings = (...data) => {
+    let newArray = [];
+    for (let i = 0; i < data.length; i++) {
+      if (parseInt(data[i] === true)) {
+        newArray.push(data[i]);
+      } else {
+        continue;
+      }
+    }
+  };
 }
 
 console.log(specialMix(10, 20, 30)); // 60
