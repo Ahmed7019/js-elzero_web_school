@@ -107,23 +107,26 @@ console.log(checkerArrow("Ahmed")("Not Available")());
 function specialMix(...data) {
   // create a function to extract numbers and sum the numbers
   // Your Code Here
-  let i = 0;
-  result = 0;
-  if (typeof data[i] === typeof 5) {
-    for (let i = 0; i < data.length; i++) {
-      let result = 0;
-      result += data[i];
+  let extractNumber = function (...num) {
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+      for (let j = 0; j < num.length; j++) {
+        if (!isNaN(num[i])) {
+          sum += parseInt(num[i], 10);
+          return sum;
+        } else if (typeof num[i] === typeof "") {
+          sum += parseInt(num[i], 10);
+          return sum;
+        } else {
+          return `All Is String`;
+        }
+      }
+      if (typeof num[i] === typeof "") {
+        return sum += parseInt(num[i], 10);
+      }
     }
-    return result;
-  } else if (data.includes(typeof 5)) {
-    for (let i = 0; i < data.length; i++) {
-      +data[i];
-      let result = 0;
-      result += data[i];
-    }
-  } else {
-    return `All Is String`;
-  }
+    return extractNumber(data);
+  };
 }
 
 console.log(specialMix(10, 20, 30)); // 60
