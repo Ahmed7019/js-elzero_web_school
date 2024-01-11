@@ -21,5 +21,7 @@ let myString = "1,2,3,EE,K,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
 let newString = myString.split("").filter(function (ele) {
   return ele !== "," && isNaN(ele) ? ele : "";
-}, 10);
+}, 10).map(function (ele){
+    return ele === "_" ? " " : ele;
+}).join("");
 console.log(newString);
