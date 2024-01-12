@@ -17,11 +17,19 @@
  *
  */
 
-let myString = "1,2,3,EE,K,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
+let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 
-let newString = myString.split("").filter(function (ele) {
-  return ele !== "," && isNaN(ele) ? ele : "";
-}, 10).map(function (ele){
+let solution = myString
+  .split("")
+  .filter(function (ele) {
+    // Used filter to delete any ',' & number
+    return ele !== "," && isNaN(ele) ? ele : "";
+  }, 10)
+  .map(function (ele) {
+    // Used map to exchange underscore with white space
     return ele === "_" ? " " : ele;
-}).join("");
-console.log(newString);
+  }).reduce(function (acc , current){
+     return `${acc}${current}`
+  }).slice(true);
+
+console.log(solution);
