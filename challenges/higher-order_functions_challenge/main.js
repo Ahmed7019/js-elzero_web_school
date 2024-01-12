@@ -30,6 +30,6 @@ let solution = myString
     return ele === "_" ? " " : ele;
   }).reduce(function (acc , current){
      return `${acc}${current}`
-  }).slice(true);
+  }).slice(true,-isNaN(myString));
 
 console.log(solution);
