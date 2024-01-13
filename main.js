@@ -4,11 +4,13 @@
 
 let mix = [1, 2, 3, "E", 4, "l", "z", "e", "r", 5, "o"];
 
-let mixLetters = mix.map(function(ele){
+let mixLetters = mix
+  .map(function (ele) {
     return isNaN(ele) ? ele : "";
-},10).reduce(function(acc,current){
-    return `${acc}${current}`
-});
+  }, 10)
+  .reduce(function (acc, current) {
+    return `${acc}${current}`;
+  });
 
 console.log(mixLetters);
 // Elzero
@@ -19,4 +21,8 @@ console.log(mixLetters);
 
 let myString = "EElllzzzzzzzeroo";
 
+let mySolution = myString.split("").filter(function (ele, index, arr) {
+  return arr.indexOf(ele) === index;
+}).join("");
+console.log(mySolution);
 // Elzero
