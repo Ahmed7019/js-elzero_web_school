@@ -12,3 +12,11 @@ let mixLetters = mix.map(function(ele){
 
 console.log(mixLetters);
 // Elzero
+
+// Task two
+
+// Using filter return the non repeatd letters only !
+
+let myString = "EElllzzzzzzzeroo";
+
+// Elzero
