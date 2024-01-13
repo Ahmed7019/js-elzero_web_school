@@ -21,16 +21,26 @@ console.log(mixLetters);
 
 let myString = "EElllzzzzzzzeroo";
 
-let mySolution = myString.split("").filter(function (ele, index, arr) {
-  return arr.indexOf(ele) === index;
-}).join("");
+let mySolution = myString
+  .split("")
+  .filter(function (ele, index, arr) {
+    return arr.indexOf(ele) === index;
+  })
+  .join("");
 console.log(mySolution);
 // Elzero
 
-// Task three 
+// Task three
 
 // Using reduce method => make the following array flatten without using the flat method
 
 let myArray = ["E", "l", "z", ["e", "r"], "o"];
 
+let flattenArray = myArray.reduce((acc, current) => {
+  return  acc.concat(current) ;
+}).split("").filter((ele)=>{
+    return ele !== ",";
+}).join("");
 // Elzero
+
+console.log(flattenArray);
