@@ -36,11 +36,31 @@ console.log(mySolution);
 
 let myArray = ["E", "l", "z", ["e", "r"], "o"];
 
-let flattenArray = myArray.reduce((acc, current) => {
-  return  acc.concat(current) ;
-}).split("").filter((ele)=>{
+let flattenArray = myArray
+  .reduce((acc, current) => {
+    return acc.concat(current);
+  })
+  .split("")
+  .filter((ele) => {
     return ele !== ",";
-}).join("");
+  })
+  .join("");
 // Elzero
 
 console.log(flattenArray);
+
+// Task four
+
+// Return numbers and invert it's sign
+
+let numsAndStrings = [1, 10, -10, -20, 5, "A", 3, "B", "C"];
+
+let numbersOnly = numsAndStrings
+  .filter((ele) => {
+    return !isNaN(ele);
+  })
+  .map((ele) => {
+    return -ele;
+  });
+// [-1, -10, 10, 20, -5, -3]
+
