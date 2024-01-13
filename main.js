@@ -64,3 +64,14 @@ let numbersOnly = numsAndStrings
   });
 // [-1, -10, 10, 20, -5, -3]
 
+console.log(numbersOnly);
+
+// Task five
+
+// Use reduce only to get the output 500
+
+// If current element is odd sum the current to the accumulator and if even multiply
+
+let nums = [2, 12, 11, 5, 10, 1, 99];
+
+// 500
