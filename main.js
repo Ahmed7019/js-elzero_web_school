@@ -26,3 +26,11 @@ let mySolution = myString.split("").filter(function (ele, index, arr) {
 }).join("");
 console.log(mySolution);
 // Elzero
+
+// Task three 
+
+// Using reduce method => make the following array flatten without using the flat method
+
+let myArray = ["E", "l", "z", ["e", "r"], "o"];
+
+// Elzero
