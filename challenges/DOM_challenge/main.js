@@ -12,3 +12,5 @@ let header = document.createElement("header"),
 header.appendChild(menu);
 menu.appendChild(logoName);
 menu.appendChild(meunLinks);
+
+document.body.appendChild(header);
