@@ -5,7 +5,7 @@
 // Create header
 
 let header = document.createElement("header"),
-  menu = document.createElement("nav"),
+  menu = document.createElement("div"),
   logoName = document.createElement("h2"),
   // Links here
   homeLink = document.createElement("a"),
@@ -22,15 +22,20 @@ let logoText = document.createTextNode("Elzero"),
   serviceText = document.createTextNode("Service"),
   contactText = document.createTextNode("Contact");
 // Create menu links text
-linksText = [homeText, aboutText, serviceText, contactText];
 
+linksText = [homeText, aboutText, serviceText, contactText];
+header.appendChild(logoName);
 header.appendChild(menu);
-menu.appendChild(logoName);
 logoName.appendChild(logoText);
 for (let i = 0; i < links.length; i++) {
+  links[i].classList.add("link");
+  links[i].setAttribute("href", "#");
   menu.appendChild(links[i]).appendChild(linksText[i]);
 }
 document.body.appendChild(header);
-
-
-// rgb(35,169,110);
+// Add style to the header
+document.body.style.setProperty("font-family", "arial");
+header.style.setProperty("display", "flex");
+header.style.setProperty("justify-content", "space-between");
+header.style.setProperty("align-items", "center");
+document.querySelector("h2").style.setProperty("color", " rgb(35,169,110)");
