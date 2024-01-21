@@ -26,6 +26,11 @@ linksText = [homeText, aboutText, serviceText, contactText];
 
 header.appendChild(menu);
 menu.appendChild(logoName);
-menu.appendChild(meunLinks);
 logoName.appendChild(logoText);
+for (let i = 0; i < links.length; i++) {
+  menu.appendChild(links[i]).appendChild(linksText[i]);
+}
 document.body.appendChild(header);
+
+
+// rgb(35,169,110);
