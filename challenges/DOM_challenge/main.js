@@ -39,3 +39,9 @@ header.style.setProperty("display", "flex");
 header.style.setProperty("justify-content", "space-between");
 header.style.setProperty("align-items", "center");
 document.querySelector("h2").style.setProperty("color", " rgb(35,169,110)");
+for (let i = 0; i < links.length; i++) {
+  links[i].style.setProperty("text-decoration", "none");
+  links[i].style.setProperty("padding", "1rem");
+  links[i].style.setProperty("color", "grey");
+
+}
