@@ -43,5 +43,16 @@ for (let i = 0; i < links.length; i++) {
   links[i].style.setProperty("text-decoration", "none");
   links[i].style.setProperty("padding", "1rem");
   links[i].style.setProperty("color", "grey");
+}
 
+// Create content
+
+let content = document.createElement("div");
+for (let i = 0; i < 15; i++) {
+  let product = document.createElement("div"),
+    productNum = document.createElement("p"),
+    productNumT = document.createTextNode(i),
+    productName = document.createElement("p"),
+    productNameT = document.createTextNode("Product");
+  content.appendChild(product);
 }
