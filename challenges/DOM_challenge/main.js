@@ -36,7 +36,7 @@ header.style.setProperty("background-color", "white");
 header.style.setProperty("width", "100%");
 document.body.appendChild(header);
 // Add style to the header
-document.body.style.setProperty("font-family", "arial");
+document.body.style.setProperty("font-family", "tahoma,arial");
 header.style.setProperty("display", "flex");
 header.style.setProperty("justify-content", "space-between");
 header.style.setProperty("align-items", "center");
@@ -70,6 +70,9 @@ for (let i = 0; i <= 15; i++) {
   productName.style.setProperty("color", "grey");
   product.style.setProperty("background-color", "white");
   product.style.setProperty("display", "flex");
+  product.style.setProperty("width", "calc((100%-40px)/3)");
+  product.style.setProperty("box-sizing", "border-box");
+  product.style.setProperty("border-radius", "4px");
   product.style.setProperty("flex-direction", "column");
   product.style.setProperty("justify-content", "center");
   product.style.setProperty("align-items", "center");
@@ -80,10 +83,11 @@ for (let i = 0; i <= 15; i++) {
 main.appendChild(content);
 document.body.appendChild(main);
 // Style body
-document.body.style.setProperty("padding","0");
-document.body.style.setProperty("margin","0");
+document.body.style.setProperty("padding", "0");
+document.body.style.setProperty("margin", "0");
 // Style the content
 content.style.setProperty("background-color", "lightgrey");
+content.style.setProperty("padding", "20px");
 content.style.setProperty("display", "grid");
 content.style.setProperty("gap", "1%");
 content.style.setProperty("grid-template-columns", "repeat(3,auto)");
