@@ -105,3 +105,13 @@ let footer = document.createElement("footer"),
   copyright = document.createElement("span"),
   copyrightT = document.createTextNode("Copyright 2021");
 footer.classList.add("footer");
+copyright.appendChild(copyrightT);
+footer.appendChild(copyright);
+document.body.appendChild(footer);
+
+// Style the footer
+
+footer.style.setProperty("background-color","rgb(35,169,110)");
+footer.style.setProperty("color","white");
+footer.style.setProperty("padding","1rem");
+footer.style.setProperty("text-align","center");
