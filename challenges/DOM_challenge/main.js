@@ -51,12 +51,19 @@ for (let i = 0; i < links.length; i++) {
 
 let content = document.createElement("div"),
   main = document.createElement("main");
-for (let i = 0; i <= 15; i++) {
+
+// Add class to elements
+menu.classList.add("menu");
+header.classList.add("header");
+content.classList.add("content");
+
+for (let i = 0; i < 15; i++) {
   let product = document.createElement("div"),
     productNum = document.createElement("p"),
-    productNumT = document.createTextNode(i),
+    productNumT = document.createTextNode(i + 1),
     productName = document.createElement("span"),
     productNameT = document.createTextNode("Product");
+  product.classList.add("product");
   productNum.appendChild(productNumT);
   productName.appendChild(productNameT);
   product.appendChild(productNum);
