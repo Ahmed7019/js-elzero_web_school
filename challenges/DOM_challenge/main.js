@@ -51,7 +51,6 @@ for (let i = 0; i < links.length; i++) {
 
 let content = document.createElement("div"),
   main = document.createElement("main");
-
 // Add class to elements
 menu.classList.add("menu");
 header.classList.add("header");
@@ -99,3 +98,10 @@ content.style.setProperty("display", "grid");
 content.style.setProperty("gap", "1%");
 content.style.setProperty("grid-template-columns", "repeat(3,auto)");
 content.style.setProperty("grid-template-rows", "repeat(4,auto)");
+
+// Add footer
+
+let footer = document.createElement("footer"),
+  copyright = document.createElement("span"),
+  copyrightT = document.createTextNode("Copyright 2021");
+footer.classList.add("footer");
