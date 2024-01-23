@@ -18,3 +18,30 @@ console.log(member.age); // 38
 console.log(member.country); // Egypt
 console.log(member.fullDetails());
 // My Name Is Elzero, My Age Is 38, I Live in Egypt
+
+// Task two
+
+// Method One
+// Create Your Object Here
+let objMethodOne = {
+  property: "Method One",
+};
+
+console.log(objMethodOne.property); // "Method One"
+
+// Method Two
+// Create Your Object Here
+let objMethodTwo = new Object();
+
+
+console.log(objMethodTwo.property); // "Method Two"
+
+// Method Three
+// Create Your Object Here
+
+console.log(objMethodThree.property); // "Method Three"
+
+// Method Four
+// Create Your Object Here
+
+console.log(objMethodFour.property); // "Method Four"
