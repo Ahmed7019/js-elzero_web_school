@@ -47,5 +47,8 @@ console.log(objMethodThree.property); // "Method Three"
 
 // Method Four
 // Create Your Object Here
-
+function method(prop) {
+  this.property = prop;
+}
+let objMethodFour = new method("Method Four");
 console.log(objMethodFour.property); // "Method Four"
