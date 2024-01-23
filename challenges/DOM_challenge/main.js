@@ -56,7 +56,7 @@ let content = document.createElement("div"),
 menu.classList.add("menu");
 header.classList.add("header");
 content.classList.add("content");
-
+main.classList.add("main");
 for (let i = 0; i < 15; i++) {
   let product = document.createElement("div"),
     productNum = document.createElement("p"),
