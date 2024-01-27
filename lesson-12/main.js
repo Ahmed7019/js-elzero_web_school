@@ -108,15 +108,22 @@ function specialMix(...data) {
   // create a function to extract numbers and sum the numbers
   // Your Code Here
   let ignoreStrings = (...data) => {
-    let newArray = [];
     for (let i = 0; i < data.length; i++) {
-      if (parseInt(data[i] === true)) {
-        newArray.push(data[i]);
+      if (typeof data[i] === typeof 5) {
+        let result = 0;
+        result += data[i];
+        return result;
+      } else if (isNaN(+data[i][0]) === false) {
+        let newNumber = data.slice(0, 3);
+        let result = 0;
+        result += newNumber[i];
+        return result;
       } else {
-        continue;
+        return `All Is String`;
       }
     }
   };
+  return ignoreStrings(...data);
 }
 
 console.log(specialMix(10, 20, 30)); // 60
