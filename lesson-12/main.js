@@ -124,6 +124,26 @@ function specialMix(...data) {
     }
   };
   return ignoreStrings(...data);
+  let extractNumber = function (...num) {
+    let sum = 0;
+    for (let i = 0; i < num.length; i++) {
+      for (let j = 0; j < num.length; j++) {
+        if (!isNaN(num[i])) {
+          sum += parseInt(num[i], 10);
+          return sum;
+        } else if (typeof num[i] === typeof "") {
+          sum += parseInt(num[i], 10);
+          return sum;
+        } else {
+          return `All Is String`;
+        }
+      }
+      if (typeof num[i] === typeof "") {
+        return sum += parseInt(num[i], 10);
+      }
+    }
+    return extractNumber(data);
+  };
 }
 
 console.log(specialMix(10, 20, 30)); // 60
