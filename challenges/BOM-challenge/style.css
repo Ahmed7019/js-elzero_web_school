@@ -3,3 +3,34 @@
     padding: 0;
 }
 
+.container{
+    padding: 20px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+form {
+    background-color: #eee;
+    padding: 40px;
+    width: 100%;
+}
+.input , .add {
+    margin: 10px;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.input {
+    width: 80%;
+}
+.add {
+    background-color: orange;
+    color: white;
+    width: 10%;
+    cursor: pointer;
+}
