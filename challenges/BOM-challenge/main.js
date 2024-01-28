@@ -30,6 +30,7 @@ submitBtn.addEventListener("click", function () {
   p.appendChild(textB);
   tasksDiv.appendChild(p);
   p.style.setProperty("background-color", "white");
+  p.style.setProperty("font-size", "20px");
   p.style.setProperty("padding", "15px");
   p.style.setProperty("margin", "20px auto");
   p.style.setProperty("width", "80%");
