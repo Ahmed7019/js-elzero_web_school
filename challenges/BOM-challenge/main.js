@@ -19,20 +19,24 @@ let ranomId = function () {
   return Math.floor(Math.random() * 1000000);
 };
 submitBtn.addEventListener("click", function () {
-  let p = document.createElement("p");
-  let pText = text.value;
-  let myText = {
-  id: ranomId(),
-    title: pText,
-  };
-  localStorage.setItem("text", myText);
-  let textB = document.createTextNode(myText.title);
-  p.appendChild(textB);
-  tasksDiv.appendChild(p);
-  p.style.setProperty("background-color", "white");
-  p.style.setProperty("font-size", "20px");
-  p.style.setProperty("padding", "15px");
-  p.style.setProperty("margin", "20px auto");
-  p.style.setProperty("width", "80%");
-  p.style.setProperty("border-radius", "6px");
+  // If the input field is empty do nothing
+  if (text.value === "") "";
+  else {
+    let p = document.createElement("p");
+    let pText = text.value;
+    let myText = {
+      id: ranomId(),
+      title: pText,
+    };
+    localStorage.setItem("text", myText);
+    let textB = document.createTextNode(myText.title);
+    p.appendChild(textB);
+    tasksDiv.appendChild(p);
+    p.style.setProperty("background-color", "white");
+    p.style.setProperty("font-size", "20px");
+    p.style.setProperty("padding", "15px");
+    p.style.setProperty("margin", "20px auto");
+    p.style.setProperty("width", "80%");
+    p.style.setProperty("border-radius", "6px");
+  }
 });
