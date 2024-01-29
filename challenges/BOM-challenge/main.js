@@ -7,7 +7,6 @@ let p = document.createElement("p");
 // Create function to add the text to tasks
 let addElement = function () {
   // If the input field is empty do nothing
-
   if (text.value === "") "";
   else {
     let pText = text.value;
