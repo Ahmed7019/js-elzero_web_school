@@ -6,21 +6,28 @@ let text = document.querySelector(".input"),
 let p = document.createElement("p");
 // Create function to add the text to tasks
 let addElement = function () {
+  let pText = text.value;
+  let myText = {
+    [title]: pText,
+  };
   // If the input field is empty do nothing
   if (text.value === "") "";
   else {
-    let pText = text.value;
-    let myText = {
-      title: pText,
-    };
     localStorage.setItem("text", JSON.stringify(myText.title));
   }
+  tasksDiv.appendChild(document.createElement("p"));
 };
 
+myTasks.push(JSON.parse(localStorage.getItem("text")));
 submitBtn.addEventListener("click", addElement);
-p.textContent = localStorage.getItem("text");
+// Create function to create an element
+for (let i = 0; i < myTasks.length; i++) {
+  p.textContent = myTasks[i];
+  console.log(myTasks[i]);
+}
+// myTasks[myTasks.length] = localStorage.getItem("text");
+console.log(myTasks.length);
 tasksDiv.appendChild(p);
-p.textContent = myText.title;
 p.style.setProperty("background-color", "white");
 p.style.setProperty("font-size", "20px");
 p.style.setProperty("padding", "15px");
