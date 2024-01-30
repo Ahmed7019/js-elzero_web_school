@@ -21,15 +21,33 @@ let addElement = function () {
 };
 
 let createPara = (myText) => {
-  let p = document.createElement("p");
-  p.textContent = myText.title;
-  p.style.setProperty("background-color", "white");
-  p.style.setProperty("font-size", "20px");
-  p.style.setProperty("padding", "15px");
-  p.style.setProperty("margin", "20px auto");
-  p.style.setProperty("width", "80%");
-  p.style.setProperty("border-radius", "6px");
-  tasksDiv.appendChild(p);
+  let p = document.createElement("p"),
+    div = document.createElement("div"),
+    deleteBtn = document.createElement("input");
+  p.textContent = myText.title; // the text within the paragraph
+  // The div style
+  div.style.setProperty("background-color", "white");
+  div.style.setProperty("font-size", "20px");
+  div.style.setProperty("padding", "15px");
+  div.style.setProperty("margin", "20px auto");
+  div.style.setProperty("width", "80%");
+  div.style.setProperty("border-radius", "6px");
+  div.style.setProperty("display", "flex");
+  div.style.setProperty("justify-content", "space-between");
+  div.style.setProperty("align-items", "center");
+  // The delete button
+  deleteBtn.type = "submit";
+  deleteBtn.value = "Delete";
+  deleteBtn.id = "delete";
+  deleteBtn.style.setProperty("padding", "10px");
+  deleteBtn.style.setProperty("border-radius", "6px");
+  deleteBtn.style.setProperty("border", "none");
+  deleteBtn.style.setProperty("background-color", "red");
+  deleteBtn.style.setProperty("color", "white");
+  deleteBtn.style.setProperty("cursor", "pointer");
+  div.appendChild(p);
+  div.appendChild(deleteBtn);
+  tasksDiv.appendChild(div);
 };
 
 // Load tasks from local storage on page load
