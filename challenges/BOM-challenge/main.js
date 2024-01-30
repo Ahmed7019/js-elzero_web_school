@@ -48,8 +48,20 @@ let createPara = (myText) => {
   div.appendChild(p);
   div.appendChild(deleteBtn);
   tasksDiv.appendChild(div);
+  // Delete Button Function
+  deleteBtn.addEventListener("click", () => {
+    deleteTask(myText);
+    div.remove();
+  });
 };
 
+let deleteTask = (task) => {
+  let index = myTasks.findIndex((item) => item.title === task.title);
+  if (index !== -1) {
+    myTasks.splice(index, 1);
+    localStorage.setItem("text", JSON.stringify(myTasks));
+  }
+};
 // Load tasks from local storage on page load
 window.addEventListener("load", () => {
   myTasks = JSON.parse(localStorage.getItem("text")) || [];
