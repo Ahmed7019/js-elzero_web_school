@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 .container {
   padding: 20px;
   margin: 30px auto;
