@@ -16,3 +16,17 @@ document.querySelectorAll(".element");
 document.querySelectorAll("#elzero");
 document.querySelectorAll("div");
 document.querySelectorAll(`[name = "js"]`);
+
+// Task two
+
+// Change src & alt attributes
+
+let img = document.querySelectorAll("div img");
+
+img.forEach((img) => {
+  img.setAttribute(
+    "src",
+    "https://elzero.org/wp-content/themes/elzero/imgs/logo.png"
+  );
+  img.setAttribute("alt", "Elzero logo");
+});
