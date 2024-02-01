@@ -35,13 +35,16 @@ img.forEach((img) => {
 
 // Currency conventor [1 Dollar = 15.6 pound]
 // Declare variables
-let cash = document.getElementsByName("dollar"),
-  result = document.getElementsByClassName("result"),
-  dollar = cash.value;
+let cash = document.querySelector(`[name = "dollar"]`),
+  result = document.querySelector(".result");
 // Create a function to convert the currency
-let currencyConverter = (dollar) => {
-  let converter = dollar * 15.6;
-  result.innerHTML = `${dollar} USD Dollar = ${converter} Egyptian Pound`;
+let currencyConverter = (x) => {
+  x = cash.value;
+  let converter = x * 15.6;
+  return `${x} USD Dollars = ${converter.toFixed(2)} Egyptian Pound`;
 };
 
-
+let x = cash.value;
+cash.addEventListener("click", function () {
+  result.textContent = currencyConverter(x);
+});
