@@ -30,3 +30,10 @@ img.forEach((img) => {
   );
   img.setAttribute("alt", "Elzero logo");
 });
+
+// Task three
+
+// Currency conventor [1 Dollar = 15.6 pound]
+// Declare variables
+let cash = document.getElementsByName("dollar"),
+  result = document.getElementsByClassName("result");
