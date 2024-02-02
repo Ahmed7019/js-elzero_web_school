@@ -57,6 +57,11 @@ let titleOne = document.querySelector(".one"),
   titleTwo = document.querySelector(".two");
 
 // [2] Exchange each variable attribute with its sibling attribute
-let titleAtt = titleOne.getAttribute("title");
+let titleAtt = titleOne.getAttribute("title"); // save the first title in a new variable
 titleOne.setAttribute("title", titleTwo.getAttribute("title"));
 titleTwo.setAttribute("title", `${titleAtt}`);
+
+// [3] Declare a new variable to save the content of one div
+let titleOneContent = titleOne.textContent;
+titleOne.textContent = titleTwo.textContent;
+titleTwo.textContent = titleOneContent;
