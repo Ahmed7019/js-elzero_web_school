@@ -45,6 +45,8 @@ let currencyConverter = (x) => {
 };
 
 let x = cash.value;
-cash.addEventListener("click", function () {
+cash.addEventListener("input", function () {
   result.textContent = currencyConverter(x);
 });
+
+// Task Four
