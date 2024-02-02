@@ -69,3 +69,9 @@ titleOne.textContent = titleTwo.textContent;
 let b = titleOne.hasAttribute("title");
 let z = titleTwo.hasAttribute("title");
 titleTwo.textContent = `${titleOneContent} ${b + z}`;
+
+// Task five 
+// Checking attributes
+// [1] Declare variables
+
+let images = document.querySelector(".task-five img");
