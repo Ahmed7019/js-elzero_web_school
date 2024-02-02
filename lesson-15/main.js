@@ -50,3 +50,10 @@ cash.addEventListener("input", function () {
 });
 
 // Task Four
+// Take each title attribute & HTML content to its correct title
+
+// [1] Declare variables
+let titleOne = document.querySelector(".one"),
+  titleTwo = document.querySelector(".two");
+
+  // [2] Change each variable attribute
