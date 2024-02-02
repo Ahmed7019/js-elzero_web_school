@@ -64,4 +64,8 @@ titleTwo.setAttribute("title", `${titleAtt}`);
 // [3] Declare a new variable to save the content of one div
 let titleOneContent = titleOne.textContent;
 titleOne.textContent = titleTwo.textContent;
-titleTwo.textContent = titleOneContent;
+
+// [4] Check if title one & title two includes attributes to add the number two
+let b = titleOne.hasAttribute("title");
+let z = titleTwo.hasAttribute("title");
+titleTwo.textContent = `${titleOneContent} ${b + z}`;
