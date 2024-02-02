@@ -56,4 +56,7 @@ cash.addEventListener("input", function () {
 let titleOne = document.querySelector(".one"),
   titleTwo = document.querySelector(".two");
 
-  // [2] Change each variable attribute
+// [2] Exchange each variable attribute with its sibling attribute
+let titleAtt = titleOne.getAttribute("title");
+titleOne.setAttribute("title", titleTwo.getAttribute("title"));
+titleTwo.setAttribute("title", `${titleAtt}`);
