@@ -21,7 +21,7 @@ document.querySelectorAll(`[name = "js"]`);
 
 // Change src & alt attributes
 
-let img = document.querySelectorAll("div img");
+let img = document.querySelectorAll(".task-two img");
 
 img.forEach((img) => {
   img.setAttribute(
@@ -70,8 +70,13 @@ let b = titleOne.hasAttribute("title");
 let z = titleTwo.hasAttribute("title");
 titleTwo.textContent = `${titleOneContent} ${b + z}`;
 
-// Task five 
+// Task five
 // Checking attributes
 // [1] Declare variables
 
-let images = document.querySelector(".task-five img");
+let images = document.querySelectorAll(".task-five img");
+//  Check for attributes
+images.forEach((images) => {
+  if (images.hasAttribute("alt")) images.setAttribute("alt", "old");
+  else images.setAttribute("alt", "Elzero New");
+});
