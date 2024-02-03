@@ -27,7 +27,15 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-    cursor: pointer;
-    background-color: teal;
-    color: white;
+  cursor: pointer;
+  background-color: teal;
+  color: white;
+}
+
+/* Style the result div */
+
+.results {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, auto);
 }
