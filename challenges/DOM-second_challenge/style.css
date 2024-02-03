@@ -9,4 +9,25 @@ form {
   justify-content: center;
   align-items: center;
   margin: 4rem auto;
+  width: 12rem;
+}
+
+/* Style the input fields */
+.input,
+input[type="submit"] {
+  padding: 10px;
+  margin: 0.6rem 0;
+  width: 110%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: teal;
+    color: white;
 }
