@@ -24,5 +24,7 @@ let createEle = (ele) => {
   for (let i = 0; i < numOfElements; i++) {
     elementType(ele);
     ele.textContent = eleText;
+    resultDiv.appendChild(ele);
   }
 };
+
