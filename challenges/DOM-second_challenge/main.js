@@ -1,13 +1,12 @@
 // Declare variables for input fields
 
-let numberInput = document.querySelector("input[name = 'elements']"),
-  textInput = document.querySelector("input[name = 'texts']"),
-  typeInput = document.querySelector("input[name = 'type']"),
-  submitBtn = document.querySelector("input[type = 'submit']"),
+let numberInput = document.querySelector("[name = 'elements']"),
+  textInput = document.querySelector(`[name = "texts"]`),
+  typeInput = document.querySelector("[name = 'type']"),
+  submitBtn = document.querySelector("[name = 'create']"),
   resultDiv = document.querySelector(".results");
 
 // Create a function to take the element type
-
 let elementType = () => {
   let typeOfEle = elementType.value;
   if (typeOfEle.toLowerCase() === "div") {
@@ -27,4 +26,6 @@ let createEle = (ele) => {
     resultDiv.appendChild(ele);
   }
 };
+// Add eventlistener to the button
 
+submitBtn.addEventListener("click", createEle());
