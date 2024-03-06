@@ -11,14 +11,15 @@ let textInput = document.querySelector(`[name = "texts"]`),
 let elementType = () => {
   let typeOfEle = typeInput.value,
     x = textInput.value;
-  if (typeInput === div) {
+  if (typeOfEle === "Div") {
     let ele = document.createElement("div");
-    ele = document.createElement("section");
     ele.style.setProperty("padding", "1rem");
     ele.style.setProperty("width", "200px");
     ele.style.setProperty("border-radius", "8px");
     ele.style.setProperty("background-color", "blue");
     ele.style.setProperty("color", "white");
+    ele.style.setProperty("text-align", "center");
+    ele.textContent = x;
     resultDiv.appendChild(ele);
   } else {
     ele = document.createElement("section");
@@ -27,6 +28,8 @@ let elementType = () => {
     ele.style.setProperty("border-radius", "8px");
     ele.style.setProperty("background-color", "blue");
     ele.style.setProperty("color", "white");
+    ele.style.setProperty("text-align", "center");
+    ele.textContent = x;
     resultDiv.appendChild(ele);
   }
 };
