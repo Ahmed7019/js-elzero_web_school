@@ -5,24 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script>
         // Task one
-        // let anchor = document.querySelector("a");
-        // anchor.addEventListener("click", () => {
-        //     if (anchor.classList.contains("open") && anchor.textContent === "Elzero")
-        //         anchor.open();
-        //     else
-        //         return false;
+
+        // document.addEventListener("DOMContentLoaded", () => {
+        //     let anc = document.querySelectorAll("a");
+        //     anc.forEach((a) => {
+        //         if (a.classList.contains("open")) {
+        //             if (a.textContent === "Elzero")
+        //                 window.open(a.href)
+        //         }
+        //     })
         // })
-        document.addEventListener("DOMContentLoaded", () => {
-            let anc = document.querySelectorAll("a");
-            anc.forEach((a)=> {
-                if(a.classList.contains("open")){
-                    if(a.textContent === "Elzero")
-                    window.open(a.href)
-                }
-            })
-        })
     </script>
 </head>
 
@@ -33,6 +28,19 @@
     <a class="not" href="https://facebook.com">Facebook</a>
     <a class="linked" href="https://linkedin.com">Elzero</a>
     <script src="main.js"></script>
+
+    <!-- Task two [challenge] -->
+
+    <div class="assign">
+        <input type="text" class="classes-to-add" placeholder="Add Classes" />
+        <input type="text" class="classes-to-remove" placeholder="Remove Classes" />
+        <div class="element current" title="Current">Current Element</div>
+        <div class="classes-list">
+            <h5>Current Element Class Lists</h5>
+            <div></div>
+        </div>
+    </div>
+
 </body>
 
 </html>
