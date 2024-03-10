@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Task one
+        // let anchor = document.querySelector("a");
+        // anchor.addEventListener("click", () => {
+        //     if (anchor.classList.contains("open") && anchor.textContent === "Elzero")
+        //         anchor.open();
+        //     else
+        //         return false;
+        // })
+        document.addEventListener("DOMContentLoaded", () => {
+            let anc = document.querySelectorAll("a");
+            anc.forEach((a)=> {
+                if(a.classList.contains("open")){
+                    if(a.textContent === "Elzero")
+                    window.open(a.href)
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!-- Task one -->
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script src="main.js"></script>
+</body>
+
+</html>
