@@ -24,10 +24,10 @@ let addSpan = () => {
 };
 
 inputToAddClasses.addEventListener("blur", () => {
-  if (current.classList.length > 0) {
-    classes.textContent = "";
-    // check if there is a class at the begining
+  if (current.classList.length > 0 && inputToAddClasses.value != "") {
+    addClass(inputToAddClasses.value);
     addSpan();
+    inputToAddClasses.value = "";
     current.classList = "";
   } else if (inputToAddClasses.value != "") {
     // added class from input field
@@ -36,7 +36,19 @@ inputToAddClasses.addEventListener("blur", () => {
     addSpan();
     inputToAddClasses.value = "";
     current.classList = "";
+  } else if (current.classList.length > 0) {
+    classes.textContent = "";
+    // check if there is a class at the begining
+    addSpan();
+    current.classList = "";
   } else classes.textContent = "No class found";
+
+  for (let i = 0; i < inputToAddClasses.value; i++) {
+    if (inputToAddClasses.value.include(" ")) {
+      inputToAddClasses.value.split("");
+      addSpan();
+    }
+  }
 });
 
 inputToRmClasses.addEventListener("blur", (classToRemove) => {
