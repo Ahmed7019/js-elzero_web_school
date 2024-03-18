@@ -51,6 +51,7 @@ inputToAddClasses.addEventListener("blur", () => {
   }
 });
 
+// Remove elements
 inputToRmClasses.addEventListener("blur", (classToRemove) => {
   if (current.classList.contains(classToRemove)) {
     rm(classToRemove);
@@ -58,3 +59,18 @@ inputToRmClasses.addEventListener("blur", (classToRemove) => {
     classes.textContent("Class not found");
   }
 });
+
+// Task three
+
+let ourEle = document.querySelector(".our-element");
+ourEle.nextElementSibling.remove();
+ourEle.before(document.createElement("div"));
+ourEle.previousElementSibling.textContent = "Start";
+ourEle.previousElementSibling.classList.add("start");
+ourEle.previousElementSibling.setAttribute("title", "start element");
+ourEle.previousElementSibling.setAttribute("data-value", "Start");
+ourEle.after(document.createElement("div"));
+ourEle.nextElementSibling.textContent = "End";
+ourEle.nextElementSibling.classList.add("end");
+ourEle.nextElementSibling.setAttribute("title", "end element");
+ourEle.nextElementSibling.setAttribute("data-value", "End");
