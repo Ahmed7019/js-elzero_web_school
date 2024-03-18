@@ -74,3 +74,9 @@ ourEle.nextElementSibling.textContent = "End";
 ourEle.nextElementSibling.classList.add("end");
 ourEle.nextElementSibling.setAttribute("title", "end element");
 ourEle.nextElementSibling.setAttribute("data-value", "End");
+
+// Task four
+
+let spanFour = document.querySelector(".task-four span");
+
+console.log(spanFour.nextSibling.nextSibling.nextSibling.textContent.trim());
