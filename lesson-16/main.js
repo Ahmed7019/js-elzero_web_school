@@ -80,3 +80,14 @@ ourEle.nextElementSibling.setAttribute("data-value", "End");
 let spanFour = document.querySelector(".task-four span");
 
 console.log(spanFour.nextSibling.nextSibling.nextSibling.textContent.trim());
+
+// Task five
+
+let tfEle = document.querySelectorAll(".tf-ele");
+
+tfEle.forEach((e) => {
+  e.addEventListener("click", (event) => {
+    let targetedEle = event.target;
+    console.log(targetedEle.tagName.toLowerCase());
+  });
+}, this);
