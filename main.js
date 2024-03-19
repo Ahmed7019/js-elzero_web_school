@@ -70,3 +70,24 @@ let popup = () => {
 };
 
 setTimeout(popup, 5000);
+
+// Task three
+
+let ttDiv = document.createElement("div");
+ttDiv.style.setProperty("background-color", "lightgrey");
+ttDiv.style.setProperty("margin", "1rem auto");
+ttDiv.style.setProperty("padding", "10px");
+ttDiv.style.setProperty("width", "100px");
+ttDiv.style.setProperty("height", "100px");
+ttDiv.style.setProperty("display", "flex");
+ttDiv.style.setProperty("justify-content", "center");
+ttDiv.style.setProperty("align-items", "center");
+
+let ttDivContent = 10;
+document.body.appendChild(ttDiv);
+ttDiv.textContent = ttDivContent;
+let count = setInterval(() => {
+  ttDiv.textContent = ttDivContent;
+  ttDivContent--;
+  if (ttDiv.textContent === "0") clearInterval(count);
+}, 1000);
