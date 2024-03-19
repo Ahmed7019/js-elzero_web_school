@@ -89,5 +89,8 @@ ttDiv.textContent = ttDivContent;
 let count = setInterval(() => {
   ttDiv.textContent = ttDivContent;
   ttDivContent--;
+  if (ttDiv.textContent === "5") {
+    window.open("https://elzero.org", "", "");
+  }
   if (ttDiv.textContent === "0") clearInterval(count);
 }, 1000);
