@@ -86,11 +86,12 @@ ttDiv.style.setProperty("align-items", "center");
 let ttDivContent = 10;
 document.body.appendChild(ttDiv);
 ttDiv.textContent = ttDivContent;
+// counting down process
 let count = setInterval(() => {
   ttDiv.textContent = ttDivContent;
   ttDivContent--;
   if (ttDiv.textContent === "5") {
-    window.open("https://elzero.org", "", "");
+    window.open("https://elzero.org", "", "iframe");
   }
   if (ttDiv.textContent === "0") clearInterval(count);
 }, 1000);
