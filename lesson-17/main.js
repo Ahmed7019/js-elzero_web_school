@@ -91,7 +91,11 @@ let count = setInterval(() => {
   ttDiv.textContent = ttDivContent;
   ttDivContent--;
   if (ttDiv.textContent === "5") {
-    window.open("https://elzero.org", "", "iframe");
+    window.open(
+      "https://elzero.org",
+      "",
+      "popup ,width=500,height=500,left=500,top=400"
+    );
   }
   if (ttDiv.textContent === "0") clearInterval(count);
 }, 1000);
