@@ -6,17 +6,17 @@
 let fonts = document.querySelector("#fonts");
 
 // Colors :
-let green = document.querySelector(`[value = "green"]`),
-  blue = document.querySelector(`[value = "blue"]`),
-  yellow = document.querySelector(`[value = "yellow"]`),
-  red = document.querySelector(`[value = "red"]`),
-  violet = document.querySelector(`[value = "violet"]`),
-  pink = document.querySelector(`[value = "pink"]`);
+let colors = document.querySelector("#colors");
 
 // Sizes :
 let sizes = document.querySelectorAll("#sizes option");
 
 // On selection , change the font family
 fonts.addEventListener("change", () => {
-  document.body.style.fontFamily = x.value;
+  document.body.style.fontFamily = fonts.value;
+});
+
+// On selection , change the color
+colors.addEventListener("change", () => {
+  document.body.style.color = colors.value;
 });
