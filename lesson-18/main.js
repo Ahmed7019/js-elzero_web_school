@@ -9,7 +9,7 @@ let fonts = document.querySelector("#fonts");
 let colors = document.querySelector("#colors");
 
 // Sizes :
-let sizes = document.querySelectorAll("#sizes option");
+let sizes = document.querySelector("#sizes");
 
 // On selection , change the font family
 fonts.addEventListener("change", () => {
@@ -19,4 +19,9 @@ fonts.addEventListener("change", () => {
 // On selection , change the color
 colors.addEventListener("change", () => {
   document.body.style.color = colors.value;
+});
+
+// On selection , change the color
+sizes.addEventListener("change", () => {
+  document.body.style.fontSize = `${sizes.value}px`;
 });
