@@ -15,7 +15,27 @@
             color: green;
             font-size: 16;
         }
+
+        /* Task two - form style */
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem auto;
+        }
+
+        form select {
+            text-align: center;
+        }
+
+        form input,
+        form select {
+            padding: 4px 8px;
+            margin: 8px;
+        }
     </style>
+
 
 </head>
 
@@ -53,6 +73,21 @@
         <option value="30">30</option>
     </select>
     <h1>Task one</h1>
+
+    <!-- Task two -->
+    <form action="">
+        <input type="text" placeholder="First name" id="first">
+        <input type="text" placeholder="Last name" id="second">
+        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        <label for="skills">Skills</label>
+        <select name="skills" id="skills">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">Javascript</option>
+            <option value="tailwindcss">Tailwindcss</option>
+            <option value="reactjs">Rreactjs</option>
+        </select>
+    </form>
     <script src="main.js"></script>
 </body>
 

@@ -37,3 +37,33 @@ window.addEventListener("load", () => {
   colors.value = localStorage.getItem("color");
   sizes.value = localStorage.getItem("font-size");
 });
+
+// Task two
+
+// [1] declare variables
+
+let form = document.querySelector("form");
+let sel = document.querySelector("#skills"); // selection element
+let fName = document.querySelector("#first");
+let lName = document.querySelector("#second");
+let email = document.querySelector("#email");
+
+// User inputting is triggered , create items in session storage and assign values to it
+form.addEventListener("input", () => {
+  sessionStorage.setItem("first-name", fName.value);
+  sessionStorage.setItem("last-name", lName.value);
+  sessionStorage.setItem("email", email.value);
+});
+
+// Action to take when change from the selection box
+sel.addEventListener("change", () => {
+  sessionStorage.setItem("skills", sel.value);
+});
+
+// When refresh the page , return the past values the users entered
+window.addEventListener("load", () => {
+  fName.value = sessionStorage.getItem("first-name");
+  lName.value = sessionStorage.getItem("last-name");
+  email.value = sessionStorage.getItem("email");
+  sel.value = sessionStorage.getItem("skills");
+});
