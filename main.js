@@ -36,7 +36,30 @@ let arr3 = ["Haytham", "Shady", "Mahmoud"];
 
 let myFriends = [...arr3, ...arr1];
 
-let [, a, b, c, , ,] = myFriends;
-console.log(`My Best Friends: ${a}, ${b}, ${c}`);
+// let [, a, b, c, , ,] = myFriends;
+// console.log(`My Best Friends: ${a}, ${b}, ${c}`);
 
 // My Best Friends: Shady, Mahmoud, Ahmed
+
+// Task four
+
+const member = {
+  age: 30,
+  working: false,
+  country: "Egypt",
+  hobbies: ["Reading", "Swimming", "Programming"],
+};
+
+// Write Your Destructuring Assignment Here
+
+let { age, working, country, hobbies } = member;
+
+let [h1, , h3] = hobbies;
+console.log(`My Age Is ${age} And Iam ${working ? "" : "Not"} Working`);
+// My Age Is 30 And Iam Not Working
+
+console.log(`I Live in ${country}`);
+// I Live in Egypt
+
+console.log(`My Hobbies: ${h1} And ${h3}`);
+// My Hobbies: Reading And Programming
