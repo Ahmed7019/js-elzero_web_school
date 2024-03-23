@@ -53,12 +53,13 @@ const member = {
 // Write Your Destructuring Assignment Here
 
 let { age, working, country, hobbies } = member;
-
+let memberInfo = [age, working, country, hobbies];
+let [a, w, c] = memberInfo;
 let [h1, , h3] = hobbies;
-console.log(`My Age Is ${age} And Iam ${working ? "" : "Not"} Working`);
+console.log(`My Age Is ${a} And Iam ${w ? "" : "Not"} Working`);
 // My Age Is 30 And Iam Not Working
 
-console.log(`I Live in ${country}`);
+console.log(`I Live in ${c}`);
 // I Live in Egypt
 
 console.log(`My Hobbies: ${h1} And ${h3}`);
