@@ -34,7 +34,7 @@ let arr3 = ["Haytham", "Shady", "Mahmoud"];
 // Play With Arrays To Prepare For Destructuring
 // Write Your Destructuring Assignment Here
 
-let myFriends = [...arr3, ...arr1];
+// let myFriends = [...arr3, ...arr1];
 
 // let [, a, b, c, , ,] = myFriends;
 // console.log(`My Best Friends: ${a}, ${b}, ${c}`);
@@ -113,3 +113,49 @@ console.log(`${a} Price in Japan Is ${j_price}`);
 
 console.log(`Origin Price Is ${or}`);
 // Origin Price Is 30 USD
+
+// Task six [challenge]
+
+let chosen = 1;
+
+let myFriends = [
+  { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+];
+
+// Write Your Code Here
+
+let i = 0;
+let {
+  title,
+  age,
+  available,
+  skills: [, skillTwo],
+} = myFriends[chosen - 1];
+
+console.log(title);
+console.log(age);
+console.log(`${available ? "" : "Not"} Available`);
+console.log(skillTwo);
+
+// If chosen === 1
+
+// ("Osama");
+// 39;
+// ("Available");
+// ("CSS");
+
+// If chosen === 2
+
+// ("Ahmed");
+// 25;
+// ("Not Available");
+// ("Django");
+
+// If chosen === 3
+
+// ("Sayed");
+// 33;
+// ("Available");
+// ("Laravel");
