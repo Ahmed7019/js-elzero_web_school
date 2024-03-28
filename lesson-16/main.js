@@ -4,7 +4,7 @@ let inputToAddClasses = document.querySelector(".classes-to-add");
 let inputToRmClasses = document.querySelector(".classes-to-remove");
 let current = document.querySelector(".element.current");
 let classes = document.querySelector(".assign .classes-list div");
-let clssessArray = [];
+let classArray = [];
 
 let addClass = (x) => {
   current.classList.add(x);
@@ -21,12 +21,15 @@ let addSpan = () => {
     let sp = document.createElement("span");
     // The content within the span is the classes of the current element
     sp.textContent = current.classList.toString().toLowerCase().split(" ")[i];
+    sp.classList.add(current.classList[i]);
     classes.appendChild(sp);
   }
 };
-
 inputToAddClasses.addEventListener("blur", () => {
   if (current.classList.length > 0 && inputToAddClasses.value !== "") {
+    // if (current.classList.contains(" ")) {
+    classArray.unshift(current.classList.toString());
+    // }
     addClass(inputToAddClasses.value);
     addSpan();
     inputToAddClasses.value = "";
