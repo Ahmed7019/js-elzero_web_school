@@ -24,14 +24,13 @@ let addSpan = () => {
 };
 
 inputToAddClasses.addEventListener("blur", () => {
-  if (current.classList.length > 0 && inputToAddClasses.value != "") {
+  if (current.classList.length > 0 && inputToAddClasses.value !== "") {
     addClass(inputToAddClasses.value);
     addSpan();
     inputToAddClasses.value = "";
     current.classList = "";
   } else if (inputToAddClasses.value != "") {
     // added class from input field
-    classes.textContent = "";
     addClass(inputToAddClasses.value);
     addSpan();
     inputToAddClasses.value = "";
