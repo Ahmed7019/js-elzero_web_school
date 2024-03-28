@@ -10,6 +10,7 @@ let addClass = (x) => {
 };
 
 let rm = (x) => {
+  current.classList.remove(x);
   classes.remove(x);
 };
 
@@ -51,12 +52,19 @@ inputToAddClasses.addEventListener("blur", () => {
 });
 
 // Remove elements
-inputToRmClasses.addEventListener("blur", (classToRemove) => {
-  if (current.classList.contains(classToRemove)) {
-    rm(classToRemove);
-  } else {
-    classes.textContent("Class not found");
-  }
+inputToRmClasses.addEventListener("blur", () => {
+  let classToRemove = inputToRmClasses.value;
+  let rmClass = (cls) => {
+    if (current.classList.contains(classToRemove)) {
+      // rm(classToRemove);
+      current.classList.remove(classToRemove);
+    } else {
+      classes.appendChild(
+        document.createTextNode(` "${classToRemove} not found" `)
+      );
+    }
+  };
+  rmClass(classToRemove);
 });
 
 // Task three
