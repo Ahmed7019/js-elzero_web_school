@@ -4,6 +4,7 @@ let inputToAddClasses = document.querySelector(".classes-to-add");
 let inputToRmClasses = document.querySelector(".classes-to-remove");
 let current = document.querySelector(".element.current");
 let classes = document.querySelector(".assign .classes-list div");
+let clssessArray = [];
 
 let addClass = (x) => {
   current.classList.add(x);
@@ -30,7 +31,18 @@ inputToAddClasses.addEventListener("blur", () => {
     addSpan();
     inputToAddClasses.value = "";
     current.classList = "";
-  } else if (inputToAddClasses.value != "") {
+  } else if (
+    // if the div contains the text "No class found => remove the text "
+    inputToAddClasses.value !== "" &&
+    classes.textContent === "No class found"
+  ) {
+    classes.textContent = "";
+    // added class from input field
+    addClass(inputToAddClasses.value);
+    addSpan();
+    inputToAddClasses.value = "";
+    current.classList = "";
+  } else if (inputToAddClasses.value !== "") {
     // added class from input field
     addClass(inputToAddClasses.value);
     addSpan();
@@ -59,9 +71,7 @@ inputToRmClasses.addEventListener("blur", () => {
       // rm(classToRemove);
       current.classList.remove(classToRemove);
     } else {
-      classes.appendChild(
-        document.createTextNode(` "${classToRemove} not found" `)
-      );
+      classes.textContent = ` "${classToRemove} not found" `;
     }
   };
   rmClass(classToRemove);
