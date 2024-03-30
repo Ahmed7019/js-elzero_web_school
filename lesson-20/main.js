@@ -17,3 +17,24 @@ let myUniqueFriends = new Set(myFriends);
 console.log(myUniqueFriends);
 // Needed Output
 // (4)[("Ahmed", "Mahmoud", "Osama", "Sayed")];
+
+// Task three
+
+let myInfo = {
+  username: "Osama",
+  role: "Admin",
+  country: "Egypt",
+};
+
+let myInfoMap = new Map();
+myInfoMap.set("username", myInfo.username);
+myInfoMap.set("role", myInfo.role);
+myInfoMap.set("country", myInfo.country);
+console.log(myInfoMap);
+console.log(myInfoMap.size);
+console.log(myInfoMap.has("role"));
+
+// Needed Output
+//   Map(3) {'username' => 'Osama', 'role' => 'Admin', 'country' => 'Egypt'}
+//   3
+//   true
