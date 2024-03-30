@@ -51,10 +51,30 @@ console.log(
         return num === "0" ? "" : num;
       })
       .map((num) => {
-        return parseInt(+num);
+        return parseInt(num);
       })
   )
 );
 
 // Needed Output
 // 123;
+
+// Task five
+let theName = "Elzero";
+
+console.log(Array.from(theName));
+console.log(theName.split(""));
+console.log([...theName]);
+let nameArr = [];
+for (let c of theName) {
+  nameArr.push(c);
+}
+console.log(nameArr);
+
+let secondNameArr = Array.prototype.map.call(theName, (char) => {
+  return char;
+});
+
+console.log(secondNameArr);
+// Needed Output
+// ['E', 'l', 'z', 'e', 'r', 'o']
