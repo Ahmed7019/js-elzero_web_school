@@ -38,3 +38,23 @@ console.log(myInfoMap.has("role"));
 //   Map(3) {'username' => 'Osama', 'role' => 'Admin', 'country' => 'Egypt'}
 //   3
 //   true
+
+// Task four
+let theNumber = 100020003000;
+
+console.log(
+  ...new Set(
+    theNumber
+      .toString()
+      .split("")
+      .filter((num) => {
+        return num === "0" ? "" : num;
+      })
+      .map((num) => {
+        return parseInt(+num);
+      })
+  )
+);
+
+// Needed Output
+// 123;
