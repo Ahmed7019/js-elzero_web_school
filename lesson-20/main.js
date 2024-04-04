@@ -78,3 +78,30 @@ let secondNameArr = Array.prototype.map.call(theName, (char) => {
 console.log(secondNameArr);
 // Needed Output
 // ['E', 'l', 'z', 'e', 'r', 'o']
+
+// Task six [challenge]
+
+let chars = ["Z", "Y", "A", "D", "E", 10, 1];
+let counter = 0;
+console.log(chars);
+chars.forEach((num) => {
+  typeof num === "number" ? counter++ : "";
+});
+
+console.log(chars);
+chars.copyWithin(counter, 0);
+chars.sort((a, b) => {
+  if (typeof a === "number" && typeof b === "string")
+    return -1; // Move numbers to the begining
+  else if (typeof a === "string" && typeof b === "number") {
+    // Move strings to the end
+    return 1;
+  } else return 0; // Maintain the original order
+});
+
+console.log(chars);
+
+// console.log(numsArr);
+// chars.some(typeof 5)
+// Needed Output
+// ["A", "B", "C", "A", "B", "C", "D", "E"];
