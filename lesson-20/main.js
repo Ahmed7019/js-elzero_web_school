@@ -84,12 +84,7 @@ console.log(secondNameArr);
 let chars = ["Z", "Y", "A", "D", "E", 10, 1];
 let counter = 0;
 console.log(chars);
-chars.forEach((num) => {
-  typeof num === "number" ? counter++ : "";
-});
-
-console.log(chars);
-chars.copyWithin(counter, 0);
+// Sort the array (Numbers then characters)
 chars.sort((a, b) => {
   if (typeof a === "number" && typeof b === "string")
     return -1; // Move numbers to the begining
@@ -98,6 +93,14 @@ chars.sort((a, b) => {
     return 1;
   } else return 0; // Maintain the original order
 });
+chars.forEach((num) => {
+  typeof num === "number" ? counter++ : "";
+});
+
+console.log(chars);
+// chars.forEach((c, index) => {
+//   typeof c === "string" ? chars.copyWithin(index, counter) : "";
+// });
 
 console.log(chars);
 
