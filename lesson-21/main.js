@@ -15,3 +15,11 @@ let specialNamesRegExp = /Os\d*O/gi;
 console.log(specialNames.match(specialNamesRegExp));
 // Output
 // ['Os10O', 'OsO', 'Os100O']
+
+// Task three
+
+let phone = "+(995)-123 (4567)";
+
+let phoneRegExp = /(\D+|\d+|\s)+/gi;
+
+console.log(phone.match(phoneRegExp));
