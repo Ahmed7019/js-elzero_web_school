@@ -56,9 +56,7 @@ class Tablet extends Phone {
   }
 
   fullDetails = () => {
-    console.log(
-      `${this.name} serial is ${this.serial} and size is ${this.s}`
-    );
+    console.log(`${this.name} serial is ${this.serial} and size is ${this.s}`);
   };
 }
 
@@ -74,3 +72,51 @@ TabletTwo.fullDetails();
 
 TabletThree.fullDetails();
 // LG Serial is 250450650 And Size Is Unknown
+console.log("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+// Task three [challenge]
+// Edit The Class
+class User {
+  // Private property
+  #c;
+  constructor(username, card) {
+    this.u = username;
+    // Use a WeakMap to store the private card in a way that's difficult to access directly
+    this.#c = card;
+  }
+
+  cardSerial(x) {
+    x = "" + x;
+    let cardEx = /^(\d{4}(?:[- ])?){3}\d{4}$/;
+    let cardSerieMatch = x.match(cardEx);
+    return cardSerieMatch;
+  }
+
+  getCard() {
+    let cardSerialId = this.#c;
+    return this.cardSerial(cardSerialId);
+  }
+
+  personalData() {
+    return `Hello ${this.u} , Your credit card number is ${this.getCard()}`;
+  }
+
+  showData = this.personalData();
+}
+
+// Do Not Edit Anything Below
+
+let userOne = new User("Osama", "1234-5678-1234-5678");
+let userTwo = new User("Ahmed", "1234567812345678");
+let userThree = new User("Ghareeb", 1234567812345678);
+
+console.log(userOne.personalData());
+// Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userTwo.personalData());
+// Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userThree.personalData());
+// Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
+
+console.log(userOne.c); // Prevent Accessing To Card Property Here
+// Undefined
