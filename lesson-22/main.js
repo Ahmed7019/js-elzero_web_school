@@ -80,7 +80,6 @@ class User {
   #c;
   constructor(username, card) {
     this.u = username;
-    // Use a WeakMap to store the private card in a way that's difficult to access directly
     this.#c = card;
   }
 
@@ -88,13 +87,14 @@ class User {
     x = "" + x;
     let cardEx = /^(\d{4}-){3}\d{4}$/;
     let cardSerieMatch = cardEx.test(x);
-    if (cardSerieMatch) {
+    if (cardSerieMatch === true) {
+      // If true return the credit card number
+      return x;
+    } else {
+      // If flase just modify it
+      x = x.replace(/(\d{4})(?=\d)/g, "$1-");
       return x;
     }
-    // else {
-
-    // }
-
     return cardSerieMatch;
   }
 
