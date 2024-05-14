@@ -86,8 +86,15 @@ class User {
 
   cardSerial(x) {
     x = "" + x;
-    let cardEx = /^(\d{4}(?:[- ])?){3}\d{4}$/;
-    let cardSerieMatch = x.match(cardEx);
+    let cardEx = /^(\d{4}-){3}\d{4}$/;
+    let cardSerieMatch = cardEx.test(x);
+    if (cardSerieMatch) {
+      return x;
+    }
+    // else {
+
+    // }
+
     return cardSerieMatch;
   }
 
