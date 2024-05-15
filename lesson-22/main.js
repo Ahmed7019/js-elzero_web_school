@@ -153,6 +153,14 @@ const myObj = {
 
 // Write Your Code Here
 
+Object.defineProperty(myObj, "score", {
+  writable: false,
+  enumerable: false,
+  configurable: false,
+});
+
+delete myObj.country;
+
 myObj.score = 500;
 
 for (let prop in myObj) {
@@ -163,6 +171,6 @@ console.log(myObj);
 
 // Needed Output
 
-"username => Elzero"
-"score => 1000"
-{username: 'Elzero', score: 1000, id: 100}
+("username => Elzero");
+("score => 1000");
+// {username: 'Elzero', score: 1000, id: 100}
