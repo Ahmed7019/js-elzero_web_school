@@ -95,7 +95,6 @@ class User {
       x = x.replace(/(\d{4})(?=\d)/g, "$1-");
       return x;
     }
-    return cardSerieMatch;
   }
 
   getCard() {
@@ -103,11 +102,12 @@ class User {
     return this.cardSerial(cardSerialId);
   }
 
-  personalData() {
-    return `Hello ${this.u} , Your credit card number is ${this.getCard()}`;
-  }
+  personalData = () =>
+    `Hello ${this.u} , Your credit card number is ${this.getCard()}`;
 
-  showData = this.personalData();
+  get showData() {
+    return this.personalData();
+  }
 }
 
 // Do Not Edit Anything Below
@@ -116,13 +116,13 @@ let userOne = new User("Osama", "1234-5678-1234-5678");
 let userTwo = new User("Ahmed", "1234567812345678");
 let userThree = new User("Ghareeb", 1234567812345678);
 
-console.log(userOne.personalData());
+console.log(userOne.showData);
 // Hello Osama Your Credit Card Number Is 1234-5678-1234-5678
 
-console.log(userTwo.personalData());
+console.log(userTwo.showData);
 // Hello Ahmed Your Credit Card Number Is 1234-5678-1234-5678
 
-console.log(userThree.personalData());
+console.log(userThree.showData);
 // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
 
 console.log(userOne.c); // Prevent Accessing To Card Property Here
