@@ -127,3 +127,16 @@ console.log(userThree.showData);
 
 console.log(userOne.c); // Prevent Accessing To Card Property Here
 // Undefined
+
+// Task four
+
+console.log("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+");
+
+// Write Your Code Here
+console.log(String.prototype);
+String.prototype.addLove = function addLove() {
+  return `I Love ${this} Web School`;
+};
+// Do Not Edit Below
+let myStr = "Elzero";
+console.log(myStr.addLove()); // I Love Elzero Web School
