@@ -33,3 +33,15 @@ console.log(taskThree);
 
 // ("Sat Apr 30 2022 18:13:20 GMT+0200 (Eastern European Standard Time)");
 // ("Previous Month Is April And Last Day Is 30");
+
+console.log(`+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-`);
+console.log(`+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-`);
+
+// Task four
+let t0 = performance.now();
+for (let i = 0; i <= 99999; i++) console.log(i);
+let t1 = performance.now();
+console.log(`Loop Took ${1921} Milliseconds`);
+// Needed Output
+
+// "Loop Took 1921 Milliseconds."
