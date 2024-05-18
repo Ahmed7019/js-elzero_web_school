@@ -39,9 +39,36 @@ console.log(`+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-`);
 
 // Task four
 let t0 = performance.now();
-for (let i = 0; i <= 99999; i++) console.log(i);
+// for (let i = 0; i <= 99999; i++) console.log(i);
 let t1 = performance.now();
 console.log(`Loop Took ${1921} Milliseconds`);
 // Needed Output
 
 // "Loop Took 1921 Milliseconds."
+
+// Task five
+console.log(`+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-`);
+console.log(`+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-`);
+
+// Write Your Generator Function Here
+function* gen() {
+  // 140 + 200
+  let increment = 140;
+  let i = 14;
+  while (true) {
+    yield i;
+    i += increment;
+    increment += 200;
+  }
+}
+let generator = gen();
+
+console.log(generator.next()); // {value: 14, done: false}
+console.log(generator.next()); // {value: 154, done: false}
+console.log(generator.next()); // {value: 494, done: false}
+console.log(generator.next()); // {value: 1034, done: false}
+console.log(generator.next()); // {value: 1774, done: false}
+console.log(generator.next()); // {value: 2714, done: false}
+console.log(generator.next()); // {value: 3854, done: false}
+console.log(generator.next()); // {value: 5194, done: false}
+console.log(generator.next()); // {value: 6734, done: false}
