@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "author": "Ahmed" ,
+        "category":"Fantasy",
+        "articleName":"Harry Potter series",
+        "content":"lorem ispum"
+    },
+    {
+        "id":2, 
+        "author": "Ali" ,
+        "category":"Sports",
+        "articleName":"Real Madrid - Road to the champions league",
+        "content":"lorem ispum"
+    },
+    {
+        "id":3 , 
+        "author": "Mohammed" ,
+        "category":"Science",
+        "articleName":"Why gold mining is killing our planet",
+        "content":"lorem ispum"
+    },
+    {
+        "id":4,
+        "author": "Cristaino" ,
+        "category":"Technology",
+        "articleName":"Chat-gpt 4o",
+        "content":"lorem ispum"
+    },
+    {
+        "id":5,
+        "author": "Messi" ,
+        "category":"finance",
+        "articleName":"Why invest in bitcoin ?",
+        "content":"lorem ispum"
+    }
+  ]
