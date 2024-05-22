@@ -3,35 +3,35 @@
         "id":1,
         "author": "Ahmed" ,
         "category":"Fantasy",
-        "articleName":"Harry Potter series",
-        "content":"lorem ispum"
+        "title":"Harry Potter series",
+        "body":"lorem ispum"
     },
     {
         "id":2, 
         "author": "Ali" ,
         "category":"Sports",
-        "articleName":"Real Madrid - Road to the champions league",
-        "content":"lorem ispum"
+        "title":"Real Madrid - Road to the champions league",
+        "body":"lorem ispum"
     },
     {
         "id":3 , 
         "author": "Mohammed" ,
         "category":"Science",
-        "articleName":"Why gold mining is killing our planet",
-        "content":"lorem ispum"
+        "title":"Why gold mining is killing our planet",
+        "body":"lorem ispum"
     },
     {
         "id":4,
         "author": "Cristaino" ,
         "category":"Technology",
-        "articleName":"Chat-gpt 4o",
-        "content":"lorem ispum"
+        "title":"Chat-gpt 4o",
+        "body":"lorem ispum"
     },
     {
         "id":5,
         "author": "Messi" ,
         "category":"finance",
-        "articleName":"Why invest in bitcoin ?",
-        "content":"lorem ispum"
+        "title":"Why invest in bitcoin ?",
+        "body":"lorem ispum"
     }
   ]
