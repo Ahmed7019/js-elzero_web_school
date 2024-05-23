@@ -16,16 +16,34 @@ let getData = (apiLink) => {
   });
 };
 
-getData("./main.json").then((result) => {
-  result.length = 5;
-  for (let i = 0; i < result.length; i++) {
+// getData("./main.json").then((result) => {
+//   result.length = 5;
+//   for (let i = 0; i < result.length; i++) {
+//     let div = document.createElement("div");
+//     document.body.appendChild(div);
+//     div.innerHTML = `
+//       <h2>${result[i].title}</h2>
+//       <p>${result[i].description}</p>
+//       `;
+//   }
+
+//   return result;
+// });
+
+// Task two
+
+async function readData() {
+  let fetchData = await fetch("./main.json");
+  fetchData = await fetchData.json();
+  fetchData.legnth = 5;
+  for (let i = 0; i < fetchData.legnth; i++) {
     let div = document.createElement("div");
     document.body.appendChild(div);
     div.innerHTML = `
-      <h2>${result[i].title}</h2>
-      <p>${result[i].description}</p>
-      `;
+          <h2>${fetchData[i].title}</h2>
+          <p>${fetchData[i].description}</p>
+          `;
   }
+}
 
-  return result;
-});
+readData();
